@@ -1,0 +1,14 @@
+/data
+/log/
+/results/
+/bin/tmp/
+/src/old_exploration/
+__pycache__/
+*.py[cod]
+*.pkl
+*.npy
+*.npz
+*.png
+.venv/
+.ipynb_checkpoints/
+slurm*

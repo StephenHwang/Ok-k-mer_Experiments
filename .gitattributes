@@ -1,0 +1,2 @@
+*.tsv whitespace=-blank-at-eol,-blank-at-eof
+bin/dashing_cmp_help.md -whitespace

@@ -1,0 +1,98 @@
+[
+  {
+    "dataset": "Chlamydia",
+    "cached_csv_sha256": "a9089b17fa5a611bccbae3572306f6620c6927ca2f74b7587686ae3c5d9aee2e",
+    "scores": [
+      {
+        "size": "single",
+        "ks": [
+          20
+        ],
+        "weights": [
+          1
+        ],
+        "legacy_rho": 0.42403796527488297,
+        "new_rho": 0.424037965274883,
+        "difference": 5.551115123125783e-17
+      },
+      {
+        "size": "two",
+        "ks": [
+          9,
+          18
+        ],
+        "weights": [
+          0.45,
+          0.55
+        ],
+        "legacy_rho": 0.5132143691921338,
+        "new_rho": 0.5132143327538833,
+        "difference": -3.643825052801475e-08
+      },
+      {
+        "size": "three",
+        "ks": [
+          17,
+          22,
+          9
+        ],
+        "weights": [
+          0.3,
+          0.25,
+          0.45
+        ],
+        "legacy_rho": 0.5254358897547535,
+        "new_rho": 0.5254358495268845,
+        "difference": -4.0227869035902586e-08
+      }
+    ]
+  },
+  {
+    "dataset": "Cyano",
+    "cached_csv_sha256": "44687dea9cede5f88b2c9f545e8a02c32ed0117b2480182f9017510bdbdd0ea9",
+    "scores": [
+      {
+        "size": "single",
+        "ks": [
+          20
+        ],
+        "weights": [
+          1
+        ],
+        "legacy_rho": 0.7925296726071657,
+        "new_rho": 0.7925296726071654,
+        "difference": -2.220446049250313e-16
+      },
+      {
+        "size": "two",
+        "ks": [
+          10,
+          20
+        ],
+        "weights": [
+          0.25,
+          0.75
+        ],
+        "legacy_rho": 0.8159030261740672,
+        "new_rho": 0.8159030261388774,
+        "difference": -3.5189740010821424e-11
+      },
+      {
+        "size": "three",
+        "ks": [
+          20,
+          9,
+          10
+        ],
+        "weights": [
+          0.75,
+          0.05,
+          0.2
+        ],
+        "legacy_rho": 0.816261814480166,
+        "new_rho": 0.8162618144744499,
+        "difference": -5.716094264585081e-12
+      }
+    ]
+  }
+]
