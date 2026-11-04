@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-11-03T22:42:53.975317+00:00",
+  "commands": [
+    [
+      "sbatch",
+      "--parsable",
+      "--output=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/logs/search_%A_%a.out",
+      "--error=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/logs/search_%A_%a.err",
+      "--array=0-15%16",
+      "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/search.sh"
+    ],
+    [
+      "sbatch",
+      "--parsable",
+      "--output=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/logs/collect_%A_%a.out",
+      "--error=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/logs/collect_%A_%a.err",
+      "--dependency=afterany:32861813",
+      "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/collect.sh"
+    ]
+  ],
+  "jobs": {
+    "search": "32861813",
+    "collect": "32861814"
+  },
+  "responses": [
+    {
+      "stdout": "32861813\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "stdout": "32861814\n",
+      "stderr": "",
+      "returncode": 0
+    }
+  ]
+}

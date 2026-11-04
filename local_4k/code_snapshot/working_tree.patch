@@ -1,0 +1,117 @@
+diff --git a/README.md b/README.md
+index c5f5ec1..3297cbc 100644
+--- a/README.md
++++ b/README.md
+@@ -85,7 +85,9 @@ okkmer search --tree reference.nwk --index my_index --local 3 \
+ exclusive.
+ `-n` is the maximum number of k-mers checked in the k-mer ensembles.
+ Search stops when another length fails to improve rho by more than
+-`--improvement-tol` (default 1e-12).
++`--improvement-tol` (default 1e-12). Use `--no-early-stop` to evaluate every
++ensemble size through `--max-kmers` even when an intermediate stage fails to
++improve rho. The final recommendation still retains the best ensemble found.
+ 
+ Exactly m-length candidates have m distinct k values, all with positive weights
+ on the specified grid summing to one. Zero-weight boundaries are represented
+diff --git a/src/okkmer/cli.py b/src/okkmer/cli.py
+index ec8f9a4..a968bbb 100644
+--- a/src/okkmer/cli.py
++++ b/src/okkmer/cli.py
+@@ -31,6 +31,7 @@ def parser():
+     bounds(search)
+     search.add_argument('--w-step',type=float,default=.05,help='Weight step dividing 1 exactly (default: 0.05)')
+     search.add_argument('--threads',type=int,default=1)
++    search.add_argument('--no-early-stop',action='store_true',help='Evaluate every ensemble size through --max-kmers, retaining the best recommendation')
+     search.add_argument('--improvement-tol',type=float,default=1e-12,help='Required rho improvement for another stage (default: 1e-12)')
+     search.add_argument('--exclude-genomes',type=Path,help='One exact genome ID per line to exclude from comparisons and tree annotations')
+     search.add_argument('--save-grid',action='store_true',help='Also save every evaluated whole-dataset weight score (potentially large)')
+diff --git a/src/okkmer/search.py b/src/okkmer/search.py
+index eaaf357..3b76856 100644
+--- a/src/okkmer/search.py
++++ b/src/okkmer/search.py
+@@ -40,7 +40,7 @@ def estimate(ks, maximum, denominator):
+             for size in range(1,maximum+1)}
+ 
+ 
+-def optimize(distances, target, ks, maximum, step, delta=None, threads=1, tolerance=1e-12, grid_directory=None):
++def optimize(distances, target, ks, maximum, step, delta=None, threads=1, tolerance=1e-12, grid_directory=None, stop_on_no_improvement=True):
+     scorer = Scorer(distances, target)
+     lookup = {k:i for i,k in enumerate(ks)}
+     denominator = weight_denominator(step)
+@@ -86,10 +86,13 @@ def optimize(distances, target, ks, maximum, step, delta=None, threads=1, tolera
+         for row in rows:
+             row['gap_to_stage_best'] = best['rho']-row['rho']
+         stages.append({'size':size,'rows':rows,'best':best})
+-        if winner is not None and best['rho'] <= winner['rho']+tolerance:
++        improves = winner is None or best['rho'] > winner['rho']+tolerance
++        if not improves and stop_on_no_improvement:
+             reason = 'no_improvement'
+             break
+-        winner, previous = best, best['ks']
++        if improves:
++            winner = best
++        previous = best['ks']
+     return stages, winner, reason
+ 
+ 
+@@ -156,7 +159,7 @@ def run(args):
+     if args.dry_run:
+         return
+     out = new_directory(args.output)
+-    stages,winner,reason = optimize(distances,target,ks,args.max_kmers,args.w_step,args.local,args.threads,args.improvement_tol,out if args.save_grid else None)
++    stages,winner,reason = optimize(distances,target,ks,args.max_kmers,args.w_step,args.local,args.threads,args.improvement_tol,out if args.save_grid else None, not args.no_early_stop)
+     summary = save_search(out,stages,winner,reason)
+     node_rows = []
+     if args.annotate_nodes:
+@@ -174,7 +177,7 @@ def run(args):
+                     row.update(status='constant_tree_distances',recommendation=None)
+                 else:
+                     try:
+-                        ns,nw,nr = optimize(distances[mask],target[mask],ks,args.max_kmers,args.w_step,args.local,args.threads,args.improvement_tol)
++                        ns,nw,nr = optimize(distances[mask],target[mask],ks,args.max_kmers,args.w_step,args.local,args.threads,args.improvement_tol,stop_on_no_improvement=not args.no_early_stop)
+                     except ValueError as exc:
+                         if not str(exc).startswith('No defined correlations'):
+                             raise
+@@ -198,7 +201,7 @@ def run(args):
+            'tree_path':str(Path(args.tree).resolve()),'tree_sha256':digest(args.tree),
+            'index_path':str(Path(args.index).resolve()),'index_manifest_sha256':digest(Path(args.index)/'manifest.json'),
+            'mode':'global' if args.local is None else 'local','delta_k':args.local,'ks':ks,'max_kmers':args.max_kmers,
+-           'w_step':args.w_step,'save_grid':args.save_grid,'threads':args.threads,'improvement_tol':args.improvement_tol,
++           'early_stopping':not args.no_early_stop,'w_step':args.w_step,'save_grid':args.save_grid,'threads':args.threads,'improvement_tol':args.improvement_tol,
+            'excluded_genomes':sorted(exclusions),'n_genomes':len(set(a)|set(b)), 'n_pairs':len(target),
+            'candidate_weight_upper_bounds':estimates,'rank_ties':'average','score':'spearman_distance',**summary}
+     write_json(out/'run.json',run)
+diff --git a/tests/test_okkmer.py b/tests/test_okkmer.py
+index 8fb72f1..3fbc227 100644
+--- a/tests/test_okkmer.py
++++ b/tests/test_okkmer.py
+@@ -69,6 +69,29 @@ class ScoringTests(unittest.TestCase):
+         self.assertEqual(reason,'no_improvement')
+ 
+ 
++    def test_no_early_stop_evaluates_triples_and_keeps_smaller_winner(self):
++        d=np.arange(8.)
++        stages,winner,reason=optimize(np.column_stack([d,d,d]),d,[6,7,8],3,.25,
++                                      stop_on_no_improvement=False)
++        self.assertEqual([s['size'] for s in stages],[1,2,3])
++        self.assertEqual(winner['ensemble_size'],1)
++        self.assertEqual(reason,'max_kmers_reached')
++        self.assertEqual(stages[2]['rows'][0]['ks'],[6,7,8])
++
++
++    def test_four_length_stage_matches_scipy(self):
++        rng=np.random.default_rng(51)
++        distances=rng.random((15,4))
++        target=rng.random(15)
++        stages,_,_=optimize(distances,target,[6,7,8,9],4,.25,
++                            stop_on_no_improvement=False)
++        best=stages[-1]['best']
++        self.assertEqual(best['ks'],[6,7,8,9])
++        self.assertEqual(best['weights'],[.25,.25,.25,.25])
++        composite=sum(rankdata(distances[:,i],method='average') for i in range(4))
++        self.assertAlmostEqual(best['rho'],spearmanr(composite,target).statistic,places=14)
++
++
+ class CLITests(unittest.TestCase):
+     def setUp(self):
+         self.temp=tempfile.TemporaryDirectory()

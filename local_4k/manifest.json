@@ -1,0 +1,1357 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-03T22:42:30.230870+00:00",
+  "executable": "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+  "executable_sha256": "1ae36e091d7ccad3d947047953bc95cf2560e86413648af6e4be8cc64a6b832b",
+  "snapshot_sha256": {
+    "code_snapshot/working_tree.patch": "decee0b1d926e5c1389d4066886744389bf468913d728fc2ef569e15dd5e03ef",
+    "code_snapshot/pyproject.toml": "365da99bec967c138d877032efd62f03512befeb0887124c52616282476e1fca",
+    "code_snapshot/src/okkmer/search.py": "4b98973ddcaa784e13c5fe195dcc45514d67470232587ff04afc0eed986cf93c",
+    "code_snapshot/src/okkmer/cli.py": "5628ea5ba21c39ba98e067310ab306c0a4cbd020af353b93c15b60f67bd5dc10",
+    "code_snapshot/src/okkmer/io.py": "db96b18d9d2e34218b44db1764953f6fe07930d17db3be707035364ec09bf69f",
+    "code_snapshot/src/okkmer/index.py": "f91835af9fbd737041d7ec48b77884057db5f00aa9d764ed73e38796ed0156b1",
+    "code_snapshot/src/okkmer/__init__.py": "42b32394258ba4a37e73a2a7834e251062410e87cd31c01c9c31e1c758ccd199",
+    "code_snapshot/src/okkmer/plotting.py": "570815feac2924b4127919044de8b3fc568c33d0374d0501b826bbe8cbe6c5c4",
+    "code_snapshot/src/okkmer/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "code_snapshot/src/okkmer/scoring.py": "99e589ec5cc2a95ce7b93c8ccc669388294b632797c9d5a2d81e5189ad91e94e"
+  },
+  "source_commit": "b16c28903d8c8c4b19eca1c8cf94a43dffd43103",
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ete3": "3.1.3",
+    "matplotlib": "3.8.4"
+  },
+  "mode": "local",
+  "delta_k": 3,
+  "max_kmers": 4,
+  "k_low": 6,
+  "k_high": 40,
+  "w_step": 0.05,
+  "improvement_tol": 1e-12,
+  "early_stopping": true,
+  "threads": 8,
+  "tasks": [
+    {
+      "task_id": 0,
+      "dataset": "Aquificota",
+      "distance_type": "full",
+      "n_genomes": 132,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Aquificota/reference.nwk",
+      "tree_sha256": "46d8f1caa9e2f5d38a96f7470666e8a5b1307120bb145ebd2decedcd34e8b1a0",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Aquificota/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Aquificota/full",
+      "index_manifest_sha256": "cc0babc27c089c27614a97e886b35bb8666ac042b930f8828136affed52ad469",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/00_Aquificota_full_local/search/run.json",
+      "baseline_run_sha256": "b8e55018c22f7fd50a499a41ff43156f2a085029205ed0568bab338268e33a24",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          19,
+          20,
+          34
+        ],
+        "weights": [
+          0.35,
+          0.4,
+          0.25
+        ],
+        "rho": 0.6931648276338841,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              20
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.6909433962980985,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              20,
+              34
+            ],
+            "weights": [
+              0.8,
+              0.2
+            ],
+            "rho": 0.6930303329106386,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              19,
+              20,
+              34
+            ],
+            "weights": [
+              0.35,
+              0.4,
+              0.25
+            ],
+            "rho": 0.6931648276338841,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/00_Aquificota_full"
+    },
+    {
+      "task_id": 1,
+      "dataset": "Aquificota",
+      "distance_type": "sketch",
+      "n_genomes": 132,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Aquificota/reference.nwk",
+      "tree_sha256": "46d8f1caa9e2f5d38a96f7470666e8a5b1307120bb145ebd2decedcd34e8b1a0",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Aquificota/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Aquificota/sketch",
+      "index_manifest_sha256": "af154d8ce52ff525ec7e27c8f4e1212ddeec4f793122ca3e49e4a99277194cd0",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/02_Aquificota_sketch_local/search/run.json",
+      "baseline_run_sha256": "3cc2ce7559fbe8f780f66c28f198a8d248212fe264b26350b9fcd36559df405a",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          21,
+          22,
+          28
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ],
+        "rho": 0.718198113138523,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              28
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.6826378470472914,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              22,
+              28
+            ],
+            "weights": [
+              0.4,
+              0.6
+            ],
+            "rho": 0.7084256515128787,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1302,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              21,
+              22,
+              28
+            ],
+            "weights": [
+              0.25,
+              0.25,
+              0.5
+            ],
+            "rho": 0.718198113138523,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/01_Aquificota_sketch"
+    },
+    {
+      "task_id": 2,
+      "dataset": "Bacillales_A",
+      "distance_type": "full",
+      "n_genomes": 249,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Bacillales_A/reference.nwk",
+      "tree_sha256": "e7fdf972229b5d018f8f2899e569d3d600e0abafb177964f591d5702fdb26c5c",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Bacillales_A/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/full",
+      "index_manifest_sha256": "ea2347ede8b02b26f4d81d77abb70ed15cc8cfe41bad254acddab92e3041943e",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/04_Bacillales_A_full_local/search/run.json",
+      "baseline_run_sha256": "ea7b83653155f5ba6d296dbe78760306850c4ef583cc3d4154f450ba28a9a6a0",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          7,
+          23,
+          24
+        ],
+        "weights": [
+          0.25,
+          0.4,
+          0.35
+        ],
+        "rho": 0.6993998469802961,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 34,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              24
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.6985444484240452,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              7,
+              23
+            ],
+            "weights": [
+              0.25,
+              0.75
+            ],
+            "rho": 0.6993156381667764,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 980,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              7,
+              23,
+              24
+            ],
+            "weights": [
+              0.25,
+              0.4,
+              0.35
+            ],
+            "rho": 0.6993998469802961,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/02_Bacillales_A_full"
+    },
+    {
+      "task_id": 3,
+      "dataset": "Bacillales_A",
+      "distance_type": "sketch",
+      "n_genomes": 249,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Bacillales_A/reference.nwk",
+      "tree_sha256": "e7fdf972229b5d018f8f2899e569d3d600e0abafb177964f591d5702fdb26c5c",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Bacillales_A/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/sketch",
+      "index_manifest_sha256": "58277faead58431fce2314948792f8066e23fa7fbf2bdfdf70c5b095a1eb8adb",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/06_Bacillales_A_sketch_local/search/run.json",
+      "baseline_run_sha256": "21fb3d0a06fca31b0d7bbbc49ec1ea44c27579f2af6cf7a880c638d0e9a27101",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          19,
+          23,
+          39
+        ],
+        "weights": [
+          0.35,
+          0.35,
+          0.3
+        ],
+        "rho": 0.6667042782735434,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 34,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              23
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.597623100538158,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              19,
+              23
+            ],
+            "weights": [
+              0.45,
+              0.55
+            ],
+            "rho": 0.6394306738335457,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1189,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              19,
+              23,
+              39
+            ],
+            "weights": [
+              0.35,
+              0.35,
+              0.3
+            ],
+            "rho": 0.6667042782735434,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/03_Bacillales_A_sketch"
+    },
+    {
+      "task_id": 4,
+      "dataset": "Caldisericia",
+      "distance_type": "full",
+      "n_genomes": 49,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Caldisericia/reference.nwk",
+      "tree_sha256": "a8c3fbb952ceea2e73b65a45d515c8ca12f3e5ff49dcee352347dce1b68557c7",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Caldisericia/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Caldisericia/full",
+      "index_manifest_sha256": "a49c86735458f032261cc559c2bc950f64bebdcbeba8fbfb6e88c901ee6da82f",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/08_Caldisericia_full_local/search/run.json",
+      "baseline_run_sha256": "b00477afaaf031febf1d92b61ad55c9c1e3c0975602a944d98b05573bdeb8067",
+      "baseline_recommendation": {
+        "ensemble_size": 1,
+        "ks": [
+          20
+        ],
+        "weights": [
+          1.0
+        ],
+        "rho": 0.7732942491495417,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              20
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.7732942491495417,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              20,
+              21
+            ],
+            "weights": [
+              0.95,
+              0.05
+            ],
+            "rho": 0.7731555043776389,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 812,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              19,
+              20,
+              21
+            ],
+            "weights": [
+              0.05,
+              0.9,
+              0.05
+            ],
+            "rho": 0.7728506380853014,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/04_Caldisericia_full"
+    },
+    {
+      "task_id": 5,
+      "dataset": "Caldisericia",
+      "distance_type": "sketch",
+      "n_genomes": 49,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Caldisericia/reference.nwk",
+      "tree_sha256": "a8c3fbb952ceea2e73b65a45d515c8ca12f3e5ff49dcee352347dce1b68557c7",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Caldisericia/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Caldisericia/sketch",
+      "index_manifest_sha256": "240f397766eef520d967ba145946c210fc3fb3ffe54cbde21b6b5121064b6755",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/10_Caldisericia_sketch_local/search/run.json",
+      "baseline_run_sha256": "6763d4bb6d177d9cf77215349e599e7f1ea5d2c68dfe5ca0cf65ad87daab2a64",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          17,
+          22,
+          30
+        ],
+        "weights": [
+          0.25,
+          0.35,
+          0.4
+        ],
+        "rho": 0.7280777906691477,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              21
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.6539632072724166,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              21,
+              33
+            ],
+            "weights": [
+              0.45,
+              0.55
+            ],
+            "rho": 0.7029378979923502,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              17,
+              22,
+              30
+            ],
+            "weights": [
+              0.25,
+              0.35,
+              0.4
+            ],
+            "rho": 0.7280777906691477,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/05_Caldisericia_sketch"
+    },
+    {
+      "task_id": 6,
+      "dataset": "Chlamydiales",
+      "distance_type": "full",
+      "n_genomes": 288,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Chlamydiales/reference.nwk",
+      "tree_sha256": "c0153c8a8ca92c407dac67df1a1ee953d3d5455373b2b8224514d5fabbc22cae",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Chlamydiales/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/full",
+      "index_manifest_sha256": "440d2fde1ef0b7aedbca8ebf61da3dcb6530929a165a3990331e3663d5a2b50b",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/12_Chlamydiales_full_local/search/run.json",
+      "baseline_run_sha256": "abcc6bc8b80c267addb6fe428e7a248aade2e695384d88739446bd5fce9a3a53",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          9,
+          17,
+          22
+        ],
+        "weights": [
+          0.45,
+          0.3,
+          0.25
+        ],
+        "rho": 0.5254358896540202,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              20
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.42403796048891923,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              9,
+              18
+            ],
+            "weights": [
+              0.45,
+              0.55
+            ],
+            "rho": 0.5132144504434295,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              9,
+              17,
+              22
+            ],
+            "weights": [
+              0.45,
+              0.3,
+              0.25
+            ],
+            "rho": 0.5254358896540202,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/06_Chlamydiales_full"
+    },
+    {
+      "task_id": 7,
+      "dataset": "Chlamydiales",
+      "distance_type": "sketch",
+      "n_genomes": 288,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Chlamydiales/reference.nwk",
+      "tree_sha256": "c0153c8a8ca92c407dac67df1a1ee953d3d5455373b2b8224514d5fabbc22cae",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Chlamydiales/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/sketch",
+      "index_manifest_sha256": "ddc0c77828756f2c59aba1f2fe47b4fbf352661de50ceefe5ab29cf1e4150f83",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/14_Chlamydiales_sketch_local/search/run.json",
+      "baseline_run_sha256": "381729ed49fd2688eeb2dfe3baf88a63da4464653cb673bc136b1b65e5fd6edb",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          10,
+          19,
+          31
+        ],
+        "weights": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "rho": 0.45531070028677284,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              11
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.34870490005645716,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              10,
+              31
+            ],
+            "weights": [
+              0.55,
+              0.45
+            ],
+            "rho": 0.4162569484821284,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              10,
+              19,
+              31
+            ],
+            "weights": [
+              0.4,
+              0.3,
+              0.3
+            ],
+            "rho": 0.45531070028677284,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/07_Chlamydiales_sketch"
+    },
+    {
+      "task_id": 8,
+      "dataset": "Cyanobacteriales",
+      "distance_type": "full",
+      "n_genomes": 585,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Cyanobacteriales/reference.nwk",
+      "tree_sha256": "ada722f0ceaccd2432d32486504cfe5e7264fc44c6e2af3217f724c199fdcf36",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Cyanobacteriales/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Cyanobacteriales/full",
+      "index_manifest_sha256": "7da1c2ac10a1a30c5f6222d9f7cd2dac86ad25273fa93aa91374cf27d8fb2cd7",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/16_Cyanobacteriales_full_local/search/run.json",
+      "baseline_run_sha256": "a9501cb667221dfb4c425073802700b40a134711176e328fb86da97755929b06",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          9,
+          10,
+          20
+        ],
+        "weights": [
+          0.05,
+          0.2,
+          0.75
+        ],
+        "rho": 0.8162618133266799,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              20
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.7925296698585129,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              10,
+              20
+            ],
+            "weights": [
+              0.25,
+              0.75
+            ],
+            "rho": 0.8159030383071421,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              9,
+              10,
+              20
+            ],
+            "weights": [
+              0.05,
+              0.2,
+              0.75
+            ],
+            "rho": 0.8162618133266799,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/08_Cyanobacteriales_full"
+    },
+    {
+      "task_id": 9,
+      "dataset": "Cyanobacteriales",
+      "distance_type": "sketch",
+      "n_genomes": 585,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Cyanobacteriales/reference.nwk",
+      "tree_sha256": "ada722f0ceaccd2432d32486504cfe5e7264fc44c6e2af3217f724c199fdcf36",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Cyanobacteriales/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Cyanobacteriales/sketch",
+      "index_manifest_sha256": "2ff742e3da434e4b5a324033bcd430cb1c3592f77fe937fc377a249ffcf6898c",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/18_Cyanobacteriales_sketch_local/search/run.json",
+      "baseline_run_sha256": "e128b557576ca18c68e6a21a2b87cc50ef2fa67bd8565b3c144472ea60d996a6",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          11,
+          20,
+          32
+        ],
+        "weights": [
+          0.4,
+          0.25,
+          0.35
+        ],
+        "rho": 0.7661175423620792,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              11
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.6518572817781346,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              11,
+              32
+            ],
+            "weights": [
+              0.5,
+              0.5
+            ],
+            "rho": 0.7425032698981906,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              11,
+              20,
+              32
+            ],
+            "weights": [
+              0.4,
+              0.25,
+              0.35
+            ],
+            "rho": 0.7661175423620792,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/09_Cyanobacteriales_sketch"
+    },
+    {
+      "task_id": 10,
+      "dataset": "Neisseriaceae",
+      "distance_type": "full",
+      "n_genomes": 145,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Neisseriaceae/reference.nwk",
+      "tree_sha256": "08df5135e22bc2774f623b6b79aa41d374ce7ca22eabc2f3990b03975df8c27c",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Neisseriaceae/excluded_genomes.txt",
+      "exclude_sha256": "50ae4c968ab5c7db4ecf41f32e678c509ee633a0ecab3cf293f1229bc6d81132",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/full",
+      "index_manifest_sha256": "c67c3dddfa3598cf1fa55cecca92b567290c4b1e65c0210b4dcc9de1b47972c7",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/20_Neisseriaceae_full_local/search/run.json",
+      "baseline_run_sha256": "67129bf78fd3ac6b224dd9f0033284b8510321b4e1f48dbd04a8266bf0b9b61d",
+      "baseline_recommendation": {
+        "ensemble_size": 2,
+        "ks": [
+          10,
+          19
+        ],
+        "weights": [
+          0.2,
+          0.8
+        ],
+        "rho": 0.9102821110091087,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              19
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.8984988727611428,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              10,
+              19
+            ],
+            "weights": [
+              0.2,
+              0.8
+            ],
+            "rho": 0.9102821110091087,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              10,
+              18,
+              19
+            ],
+            "weights": [
+              0.2,
+              0.05,
+              0.75
+            ],
+            "rho": 0.9102791257535224,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/10_Neisseriaceae_full"
+    },
+    {
+      "task_id": 11,
+      "dataset": "Neisseriaceae",
+      "distance_type": "sketch",
+      "n_genomes": 145,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Neisseriaceae/reference.nwk",
+      "tree_sha256": "08df5135e22bc2774f623b6b79aa41d374ce7ca22eabc2f3990b03975df8c27c",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Neisseriaceae/excluded_genomes.txt",
+      "exclude_sha256": "50ae4c968ab5c7db4ecf41f32e678c509ee633a0ecab3cf293f1229bc6d81132",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/sketch",
+      "index_manifest_sha256": "f16ad3894df072070cf4ce0413fc4fd9346f0629f908b2d2d129f57284f148d7",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/22_Neisseriaceae_sketch_local/search/run.json",
+      "baseline_run_sha256": "c7359eab82ae955bb5f8dc6da81a0461908b15fcefa0d997f77314ab63e4cbb1",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          10,
+          18,
+          20
+        ],
+        "weights": [
+          0.2,
+          0.25,
+          0.55
+        ],
+        "rho": 0.908526448033805,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              20
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.8948766215749093,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              10,
+              20
+            ],
+            "weights": [
+              0.2,
+              0.8
+            ],
+            "rho": 0.9051585479726761,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              10,
+              18,
+              20
+            ],
+            "weights": [
+              0.2,
+              0.25,
+              0.55
+            ],
+            "rho": 0.908526448033805,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/11_Neisseriaceae_sketch"
+    },
+    {
+      "task_id": 12,
+      "dataset": "Anaerolineales",
+      "distance_type": "full",
+      "n_genomes": 525,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Anaerolineales/reference.nwk",
+      "tree_sha256": "0e83ed279501fa82ec56656437331e229ee5b0954a0ae8c9970e2ca3d725d19a",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Anaerolineales/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/full",
+      "index_manifest_sha256": "062cb28d6a4d171171e74f2328f12e68ed69d367c13717098bc20e8396f5aff3",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/24_Anaerolineales_full_local/search/run.json",
+      "baseline_run_sha256": "8c1fd82b040c0ea0eefa50825a53a1510b21c19e1245c3ee9f3c20e48d464afd",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          10,
+          20,
+          39
+        ],
+        "weights": [
+          0.15,
+          0.8,
+          0.05
+        ],
+        "rho": 0.6325837738897266,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              20
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.6235765001869459,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              10,
+              20
+            ],
+            "weights": [
+              0.15,
+              0.85
+            ],
+            "rho": 0.6322089266073334,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 1323,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              10,
+              20,
+              39
+            ],
+            "weights": [
+              0.15,
+              0.8,
+              0.05
+            ],
+            "rho": 0.6325837738897266,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/12_Anaerolineales_full"
+    },
+    {
+      "task_id": 13,
+      "dataset": "Anaerolineales",
+      "distance_type": "sketch",
+      "n_genomes": 525,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Anaerolineales/reference.nwk",
+      "tree_sha256": "0e83ed279501fa82ec56656437331e229ee5b0954a0ae8c9970e2ca3d725d19a",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Anaerolineales/excluded_genomes.txt",
+      "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/sketch",
+      "index_manifest_sha256": "dc3c2963689b611370e1982556a2ca441b58631164cec3be299b3e025d256a41",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/26_Anaerolineales_sketch_local/search/run.json",
+      "baseline_run_sha256": "eb2f5fcd335d4d4b6781a6580dcd0f2571dbbe080971681e616df63fd521d57f",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          16,
+          18,
+          23
+        ],
+        "weights": [
+          0.35,
+          0.3,
+          0.35
+        ],
+        "rho": 0.5102944523199463,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              16
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.4489111909511807,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              16,
+              18
+            ],
+            "weights": [
+              0.55,
+              0.45
+            ],
+            "rho": 0.4877374571986846,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 968,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              16,
+              18,
+              23
+            ],
+            "weights": [
+              0.35,
+              0.3,
+              0.35
+            ],
+            "rho": 0.5102944523199463,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/13_Anaerolineales_sketch"
+    },
+    {
+      "task_id": 14,
+      "dataset": "Dethiobacteria",
+      "distance_type": "full",
+      "n_genomes": 102,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Dethiobacteria/reference.nwk",
+      "tree_sha256": "49dc19e30db04c420c9eb98197d820252063a65c340c1f30d8a3f512a70538f4",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Dethiobacteria/excluded_genomes.txt",
+      "exclude_sha256": "c9960adee6532e08c0a7aa8c64caafcab707f527da86e1f971baa18f8b083222",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Dethiobacteria/full",
+      "index_manifest_sha256": "8136be878e8aa384909d7b2143e11c4ef3c4eaf7437551787e45bb4f1fc4d34a",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/28_Dethiobacteria_full_local/search/run.json",
+      "baseline_run_sha256": "62adfa0ca6a3c6d51b0a47e6abc5c328f17ec648d8133b68944a84da92c3264c",
+      "baseline_recommendation": {
+        "ensemble_size": 2,
+        "ks": [
+          20,
+          22
+        ],
+        "weights": [
+          0.7,
+          0.3
+        ],
+        "rho": 0.7008782100042729,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 35,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              21
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.7004650630474282,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              20,
+              22
+            ],
+            "weights": [
+              0.7,
+              0.3
+            ],
+            "rho": 0.7008782100042729,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 968,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              20,
+              21,
+              22
+            ],
+            "weights": [
+              0.7,
+              0.05,
+              0.25
+            ],
+            "rho": 0.7008732772046724,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/14_Dethiobacteria_full"
+    },
+    {
+      "task_id": 15,
+      "dataset": "Dethiobacteria",
+      "distance_type": "sketch",
+      "n_genomes": 102,
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Dethiobacteria/reference.nwk",
+      "tree_sha256": "49dc19e30db04c420c9eb98197d820252063a65c340c1f30d8a3f512a70538f4",
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/inputs/Dethiobacteria/excluded_genomes.txt",
+      "exclude_sha256": "c9960adee6532e08c0a7aa8c64caafcab707f527da86e1f971baa18f8b083222",
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Dethiobacteria/sketch",
+      "index_manifest_sha256": "2e037cc1e3c62c26f139dd9170321c7bc28afd04252da7461b1a2077cd0c822d",
+      "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/30_Dethiobacteria_sketch_local/search/run.json",
+      "baseline_run_sha256": "fdc0458bed0dbadc9236373cced587dccca3f34538a5a8d309e17c8f9265d9ea",
+      "baseline_recommendation": {
+        "ensemble_size": 3,
+        "ks": [
+          18,
+          19,
+          21
+        ],
+        "weights": [
+          0.3,
+          0.25,
+          0.45
+        ],
+        "rho": 0.5787476048485972,
+        "gap_to_stage_best": 0.0
+      },
+      "baseline_stages": [
+        {
+          "ensemble_size": 1,
+          "n_combinations": 34,
+          "best": {
+            "ensemble_size": 1,
+            "ks": [
+              21
+            ],
+            "weights": [
+              1.0
+            ],
+            "rho": 0.5171507783558829,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 2,
+          "n_combinations": 217,
+          "best": {
+            "ensemble_size": 2,
+            "ks": [
+              19,
+              21
+            ],
+            "weights": [
+              0.5,
+              0.5
+            ],
+            "rho": 0.5614530112832962,
+            "gap_to_stage_best": 0.0
+          }
+        },
+        {
+          "ensemble_size": 3,
+          "n_combinations": 968,
+          "best": {
+            "ensemble_size": 3,
+            "ks": [
+              18,
+              19,
+              21
+            ],
+            "weights": [
+              0.3,
+              0.25,
+              0.45
+            ],
+            "rho": 0.5787476048485972,
+            "gap_to_stage_best": 0.0
+          }
+        }
+      ],
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/15_Dethiobacteria_sketch"
+    }
+  ]
+}

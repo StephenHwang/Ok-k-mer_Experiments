@@ -1,0 +1,17 @@
+task_id	dataset	distance_type	n_genomes	index	output
+0	Aquificota	full	132	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Aquificota/full	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/00_Aquificota_full
+1	Aquificota	sketch	132	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Aquificota/sketch	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/01_Aquificota_sketch
+2	Bacillales_A	full	249	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/full	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/02_Bacillales_A_full
+3	Bacillales_A	sketch	249	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/sketch	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/03_Bacillales_A_sketch
+4	Caldisericia	full	49	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Caldisericia/full	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/04_Caldisericia_full
+5	Caldisericia	sketch	49	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Caldisericia/sketch	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/05_Caldisericia_sketch
+6	Chlamydiales	full	288	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/full	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/06_Chlamydiales_full
+7	Chlamydiales	sketch	288	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/sketch	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/07_Chlamydiales_sketch
+8	Cyanobacteriales	full	585	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Cyanobacteriales/full	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/08_Cyanobacteriales_full
+9	Cyanobacteriales	sketch	585	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Cyanobacteriales/sketch	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/09_Cyanobacteriales_sketch
+10	Neisseriaceae	full	145	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/full	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/10_Neisseriaceae_full
+11	Neisseriaceae	sketch	145	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/sketch	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/11_Neisseriaceae_sketch
+12	Anaerolineales	full	525	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/full	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/12_Anaerolineales_full
+13	Anaerolineales	sketch	525	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/sketch	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/13_Anaerolineales_sketch
+14	Dethiobacteria	full	102	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Dethiobacteria/full	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/14_Dethiobacteria_full
+15	Dethiobacteria	sketch	102	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Dethiobacteria/sketch	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/local_4k/runs/15_Dethiobacteria_sketch
