@@ -1,0 +1,211 @@
+{
+  "task": {
+    "task_id": 2,
+    "dataset": "Aquificota",
+    "distance_type": "sketch",
+    "mode": "local",
+    "delta_k": 3,
+    "n_genomes": 132,
+    "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Aquificota/reference.nwk",
+    "tree_sha256": "46d8f1caa9e2f5d38a96f7470666e8a5b1307120bb145ebd2decedcd34e8b1a0",
+    "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Aquificota/excluded_genomes.txt",
+    "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Aquificota/sketch",
+    "index_manifest_sha256": "af154d8ce52ff525ec7e27c8f4e1212ddeec4f793122ca3e49e4a99277194cd0",
+    "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/02_Aquificota_sketch_local/search/run.json",
+    "baseline_run_sha256": "3cc2ce7559fbe8f780f66c28f198a8d248212fe264b26350b9fcd36559df405a",
+    "baseline_recommendation": {
+      "ensemble_size": 3,
+      "ks": [
+        21,
+        22,
+        28
+      ],
+      "weights": [
+        0.25,
+        0.25,
+        0.5
+      ],
+      "rho": 0.718198113138523,
+      "gap_to_stage_best": 0.0
+    },
+    "baseline_stages": [
+      {
+        "ensemble_size": 1,
+        "n_combinations": 35,
+        "best": {
+          "ensemble_size": 1,
+          "ks": [
+            28
+          ],
+          "weights": [
+            1.0
+          ],
+          "rho": 0.6826378470472914,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 2,
+        "n_combinations": 217,
+        "best": {
+          "ensemble_size": 2,
+          "ks": [
+            22,
+            28
+          ],
+          "weights": [
+            0.4,
+            0.6
+          ],
+          "rho": 0.7084256515128787,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 3,
+        "n_combinations": 1302,
+        "best": {
+          "ensemble_size": 3,
+          "ks": [
+            21,
+            22,
+            28
+          ],
+          "weights": [
+            0.25,
+            0.25,
+            0.5
+          ],
+          "rho": 0.718198113138523,
+          "gap_to_stage_best": 0.0
+        }
+      }
+    ],
+    "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/02_Aquificota_sketch_local"
+  },
+  "command": [
+    "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+    "search",
+    "--tree",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Aquificota/reference.nwk",
+    "--index",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Aquificota/sketch",
+    "--exclude-genomes",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Aquificota/excluded_genomes.txt",
+    "--max-kmers",
+    "3",
+    "--k-low",
+    "6",
+    "--k-high",
+    "40",
+    "--w-step",
+    "0.05",
+    "--improvement-tol",
+    "1e-12",
+    "--threads",
+    "8",
+    "--output",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/02_Aquificota_sketch_local/search",
+    "--local",
+    "3"
+  ],
+  "started_utc": "2026-11-04T03:34:19.126095+00:00",
+  "hostname": "sr10",
+  "slurm_job_id": "32870332",
+  "slurm_array_job_id": "32870327",
+  "slurm_array_task_id": "2",
+  "cpu_affinity": [
+    32,
+    33,
+    34,
+    35,
+    40,
+    41,
+    42,
+    43
+  ],
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ete3": "3.1.3",
+    "matplotlib": "3.8.4"
+  },
+  "finished_utc": "2026-11-04T03:35:26.466415+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 67.28,
+  "peak_rss_kib": 146764,
+  "peak_rss_gib": 0.13996505737304688,
+  "user_seconds": 94.3,
+  "system_seconds": 17.87,
+  "recommendation": {
+    "ensemble_size": 3,
+    "ks": [
+      21,
+      22,
+      28
+    ],
+    "weights": [
+      0.25,
+      0.25,
+      0.5
+    ],
+    "rho": 0.718198113138523,
+    "gap_to_stage_best": 0.0
+  },
+  "stages": [
+    {
+      "ensemble_size": 1,
+      "n_combinations": 35,
+      "best": {
+        "ensemble_size": 1,
+        "ks": [
+          28
+        ],
+        "weights": [
+          1.0
+        ],
+        "rho": 0.6826378470472914,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 2,
+      "n_combinations": 217,
+      "best": {
+        "ensemble_size": 2,
+        "ks": [
+          22,
+          28
+        ],
+        "weights": [
+          0.4,
+          0.6
+        ],
+        "rho": 0.7084256515128787,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 3,
+      "n_combinations": 1302,
+      "best": {
+        "ensemble_size": 3,
+        "ks": [
+          21,
+          22,
+          28
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ],
+        "rho": 0.718198113138523,
+        "gap_to_stage_best": 0.0
+      }
+    }
+  ],
+  "stop_reason": "max_kmers_reached"
+}

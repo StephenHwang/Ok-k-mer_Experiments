@@ -1,0 +1,4 @@
+ensemble_size	ks	weights	rho	gap_to_stage_best	selected
+1	[20]	[1.0]	0.42403796048891923	0.0	False
+2	[9, 18]	[0.45, 0.55]	0.5132144504434295	0.0	False
+3	[9, 17, 22]	[0.45, 0.3, 0.25]	0.5254358896540202	0.0	True

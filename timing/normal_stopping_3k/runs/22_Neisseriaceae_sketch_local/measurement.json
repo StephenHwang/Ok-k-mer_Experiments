@@ -1,0 +1,211 @@
+{
+  "task": {
+    "task_id": 22,
+    "dataset": "Neisseriaceae",
+    "distance_type": "sketch",
+    "mode": "local",
+    "delta_k": 3,
+    "n_genomes": 145,
+    "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Neisseriaceae/reference.nwk",
+    "tree_sha256": "08df5135e22bc2774f623b6b79aa41d374ce7ca22eabc2f3990b03975df8c27c",
+    "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Neisseriaceae/excluded_genomes.txt",
+    "exclude_sha256": "50ae4c968ab5c7db4ecf41f32e678c509ee633a0ecab3cf293f1229bc6d81132",
+    "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/sketch",
+    "index_manifest_sha256": "f16ad3894df072070cf4ce0413fc4fd9346f0629f908b2d2d129f57284f148d7",
+    "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/22_Neisseriaceae_sketch_local/search/run.json",
+    "baseline_run_sha256": "c7359eab82ae955bb5f8dc6da81a0461908b15fcefa0d997f77314ab63e4cbb1",
+    "baseline_recommendation": {
+      "ensemble_size": 3,
+      "ks": [
+        10,
+        18,
+        20
+      ],
+      "weights": [
+        0.2,
+        0.25,
+        0.55
+      ],
+      "rho": 0.908526448033805,
+      "gap_to_stage_best": 0.0
+    },
+    "baseline_stages": [
+      {
+        "ensemble_size": 1,
+        "n_combinations": 35,
+        "best": {
+          "ensemble_size": 1,
+          "ks": [
+            20
+          ],
+          "weights": [
+            1.0
+          ],
+          "rho": 0.8948766215749093,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 2,
+        "n_combinations": 217,
+        "best": {
+          "ensemble_size": 2,
+          "ks": [
+            10,
+            20
+          ],
+          "weights": [
+            0.2,
+            0.8
+          ],
+          "rho": 0.9051585479726761,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 3,
+        "n_combinations": 1323,
+        "best": {
+          "ensemble_size": 3,
+          "ks": [
+            10,
+            18,
+            20
+          ],
+          "weights": [
+            0.2,
+            0.25,
+            0.55
+          ],
+          "rho": 0.908526448033805,
+          "gap_to_stage_best": 0.0
+        }
+      }
+    ],
+    "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/22_Neisseriaceae_sketch_local"
+  },
+  "command": [
+    "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+    "search",
+    "--tree",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Neisseriaceae/reference.nwk",
+    "--index",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/sketch",
+    "--exclude-genomes",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Neisseriaceae/excluded_genomes.txt",
+    "--max-kmers",
+    "3",
+    "--k-low",
+    "6",
+    "--k-high",
+    "40",
+    "--w-step",
+    "0.05",
+    "--improvement-tol",
+    "1e-12",
+    "--threads",
+    "8",
+    "--output",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/22_Neisseriaceae_sketch_local/search",
+    "--local",
+    "3"
+  ],
+  "started_utc": "2026-11-04T03:34:19.176955+00:00",
+  "hostname": "sr28",
+  "slurm_job_id": "32870352",
+  "slurm_array_job_id": "32870327",
+  "slurm_array_task_id": "22",
+  "cpu_affinity": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ete3": "3.1.3",
+    "matplotlib": "3.8.4"
+  },
+  "finished_utc": "2026-11-04T03:35:56.315216+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 97.13,
+  "peak_rss_kib": 152984,
+  "peak_rss_gib": 0.14589691162109375,
+  "user_seconds": 137.11,
+  "system_seconds": 28.68,
+  "recommendation": {
+    "ensemble_size": 3,
+    "ks": [
+      10,
+      18,
+      20
+    ],
+    "weights": [
+      0.2,
+      0.25,
+      0.55
+    ],
+    "rho": 0.908526448033805,
+    "gap_to_stage_best": 0.0
+  },
+  "stages": [
+    {
+      "ensemble_size": 1,
+      "n_combinations": 35,
+      "best": {
+        "ensemble_size": 1,
+        "ks": [
+          20
+        ],
+        "weights": [
+          1.0
+        ],
+        "rho": 0.8948766215749093,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 2,
+      "n_combinations": 217,
+      "best": {
+        "ensemble_size": 2,
+        "ks": [
+          10,
+          20
+        ],
+        "weights": [
+          0.2,
+          0.8
+        ],
+        "rho": 0.9051585479726761,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 3,
+      "n_combinations": 1323,
+      "best": {
+        "ensemble_size": 3,
+        "ks": [
+          10,
+          18,
+          20
+        ],
+        "weights": [
+          0.2,
+          0.25,
+          0.55
+        ],
+        "rho": 0.908526448033805,
+        "gap_to_stage_best": 0.0
+      }
+    }
+  ],
+  "stop_reason": "max_kmers_reached"
+}

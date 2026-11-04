@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "okkmer_version": "0.1.0",
+  "status": "complete",
+  "started_utc": "2026-11-04T03:34:29.884993+00:00",
+  "finished_utc": "2026-11-04T03:36:27.417296+00:00",
+  "elapsed_seconds": 117.53230449929833,
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.13.1",
+  "source_sha256": {
+    "search.py": "4b98973ddcaa784e13c5fe195dcc45514d67470232587ff04afc0eed986cf93c",
+    "scoring.py": "99e589ec5cc2a95ce7b93c8ccc669388294b632797c9d5a2d81e5189ad91e94e",
+    "index.py": "f91835af9fbd737041d7ec48b77884057db5f00aa9d764ed73e38796ed0156b1",
+    "io.py": "db96b18d9d2e34218b44db1764953f6fe07930d17db3be707035364ec09bf69f"
+  },
+  "tree_path": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Bacillales_A/reference.nwk",
+  "tree_sha256": "e7fdf972229b5d018f8f2899e569d3d600e0abafb177964f591d5702fdb26c5c",
+  "index_path": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/full",
+  "index_manifest_sha256": "ea2347ede8b02b26f4d81d77abb70ed15cc8cfe41bad254acddab92e3041943e",
+  "mode": "local",
+  "delta_k": 3,
+  "ks": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "max_kmers": 3,
+  "early_stopping": true,
+  "w_step": 0.05,
+  "save_grid": false,
+  "threads": 8,
+  "improvement_tol": 1e-12,
+  "excluded_genomes": [],
+  "n_genomes": 249,
+  "n_pairs": 30876,
+  "candidate_weight_upper_bounds": {
+    "1": 35,
+    "2": 11305,
+    "3": 1119195
+  },
+  "rank_ties": "average",
+  "score": "spearman_distance",
+  "recommendation": {
+    "ensemble_size": 3,
+    "ks": [
+      7,
+      23,
+      24
+    ],
+    "weights": [
+      0.25,
+      0.4,
+      0.35
+    ],
+    "rho": 0.6993998469802961,
+    "gap_to_stage_best": 0.0
+  },
+  "stop_reason": "max_kmers_reached",
+  "stages": [
+    {
+      "ensemble_size": 1,
+      "n_combinations": 34,
+      "best": {
+        "ensemble_size": 1,
+        "ks": [
+          24
+        ],
+        "weights": [
+          1.0
+        ],
+        "rho": 0.6985444484240452,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 2,
+      "n_combinations": 217,
+      "best": {
+        "ensemble_size": 2,
+        "ks": [
+          7,
+          23
+        ],
+        "weights": [
+          0.25,
+          0.75
+        ],
+        "rho": 0.6993156381667764,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 3,
+      "n_combinations": 980,
+      "best": {
+        "ensemble_size": 3,
+        "ks": [
+          7,
+          23,
+          24
+        ],
+        "weights": [
+          0.25,
+          0.4,
+          0.35
+        ],
+        "rho": 0.6993998469802961,
+        "gap_to_stage_best": 0.0
+      }
+    }
+  ]
+}

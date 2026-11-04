@@ -1,0 +1,135 @@
+{
+  "task": {
+    "task_id": 4,
+    "dataset": "Bacillales_A",
+    "distance_type": "full",
+    "mode": "local",
+    "delta_k": 3,
+    "n_genomes": 249,
+    "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Bacillales_A/reference.nwk",
+    "tree_sha256": "e7fdf972229b5d018f8f2899e569d3d600e0abafb177964f591d5702fdb26c5c",
+    "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Bacillales_A/excluded_genomes.txt",
+    "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/full",
+    "index_manifest_sha256": "ea2347ede8b02b26f4d81d77abb70ed15cc8cfe41bad254acddab92e3041943e",
+    "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/04_Bacillales_A_full_local/search/run.json",
+    "baseline_run_sha256": "ea7b83653155f5ba6d296dbe78760306850c4ef583cc3d4154f450ba28a9a6a0",
+    "baseline_recommendation": {
+      "ensemble_size": 3,
+      "ks": [
+        7,
+        23,
+        24
+      ],
+      "weights": [
+        0.25,
+        0.4,
+        0.35
+      ],
+      "rho": 0.6993998469802961,
+      "gap_to_stage_best": 0.0
+    },
+    "baseline_stages": [
+      {
+        "ensemble_size": 1,
+        "n_combinations": 34,
+        "best": {
+          "ensemble_size": 1,
+          "ks": [
+            24
+          ],
+          "weights": [
+            1.0
+          ],
+          "rho": 0.6985444484240452,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 2,
+        "n_combinations": 217,
+        "best": {
+          "ensemble_size": 2,
+          "ks": [
+            7,
+            23
+          ],
+          "weights": [
+            0.25,
+            0.75
+          ],
+          "rho": 0.6993156381667764,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 3,
+        "n_combinations": 980,
+        "best": {
+          "ensemble_size": 3,
+          "ks": [
+            7,
+            23,
+            24
+          ],
+          "weights": [
+            0.25,
+            0.4,
+            0.35
+          ],
+          "rho": 0.6993998469802961,
+          "gap_to_stage_best": 0.0
+        }
+      }
+    ],
+    "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/04_Bacillales_A_full_local"
+  },
+  "command": [
+    "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+    "search",
+    "--tree",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Bacillales_A/reference.nwk",
+    "--index",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/full",
+    "--exclude-genomes",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Bacillales_A/excluded_genomes.txt",
+    "--max-kmers",
+    "3",
+    "--k-low",
+    "6",
+    "--k-high",
+    "40",
+    "--w-step",
+    "0.05",
+    "--improvement-tol",
+    "1e-12",
+    "--threads",
+    "8",
+    "--output",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/04_Bacillales_A_full_local/search",
+    "--local",
+    "3"
+  ],
+  "started_utc": "2026-11-04T03:34:19.070536+00:00",
+  "hostname": "sr12",
+  "slurm_job_id": "32870334",
+  "slurm_array_job_id": "32870327",
+  "slurm_array_task_id": "4",
+  "cpu_affinity": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ete3": "3.1.3",
+    "matplotlib": "3.8.4"
+  }
+}

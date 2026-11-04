@@ -1,0 +1,211 @@
+{
+  "task": {
+    "task_id": 24,
+    "dataset": "Anaerolineales",
+    "distance_type": "full",
+    "mode": "local",
+    "delta_k": 3,
+    "n_genomes": 525,
+    "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Anaerolineales/reference.nwk",
+    "tree_sha256": "0e83ed279501fa82ec56656437331e229ee5b0954a0ae8c9970e2ca3d725d19a",
+    "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Anaerolineales/excluded_genomes.txt",
+    "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/full",
+    "index_manifest_sha256": "062cb28d6a4d171171e74f2328f12e68ed69d367c13717098bc20e8396f5aff3",
+    "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/24_Anaerolineales_full_local/search/run.json",
+    "baseline_run_sha256": "8c1fd82b040c0ea0eefa50825a53a1510b21c19e1245c3ee9f3c20e48d464afd",
+    "baseline_recommendation": {
+      "ensemble_size": 3,
+      "ks": [
+        10,
+        20,
+        39
+      ],
+      "weights": [
+        0.15,
+        0.8,
+        0.05
+      ],
+      "rho": 0.6325837738897266,
+      "gap_to_stage_best": 0.0
+    },
+    "baseline_stages": [
+      {
+        "ensemble_size": 1,
+        "n_combinations": 35,
+        "best": {
+          "ensemble_size": 1,
+          "ks": [
+            20
+          ],
+          "weights": [
+            1.0
+          ],
+          "rho": 0.6235765001869459,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 2,
+        "n_combinations": 217,
+        "best": {
+          "ensemble_size": 2,
+          "ks": [
+            10,
+            20
+          ],
+          "weights": [
+            0.15,
+            0.85
+          ],
+          "rho": 0.6322089266073334,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 3,
+        "n_combinations": 1323,
+        "best": {
+          "ensemble_size": 3,
+          "ks": [
+            10,
+            20,
+            39
+          ],
+          "weights": [
+            0.15,
+            0.8,
+            0.05
+          ],
+          "rho": 0.6325837738897266,
+          "gap_to_stage_best": 0.0
+        }
+      }
+    ],
+    "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/24_Anaerolineales_full_local"
+  },
+  "command": [
+    "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+    "search",
+    "--tree",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Anaerolineales/reference.nwk",
+    "--index",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/full",
+    "--exclude-genomes",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Anaerolineales/excluded_genomes.txt",
+    "--max-kmers",
+    "3",
+    "--k-low",
+    "6",
+    "--k-high",
+    "40",
+    "--w-step",
+    "0.05",
+    "--improvement-tol",
+    "1e-12",
+    "--threads",
+    "8",
+    "--output",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/24_Anaerolineales_full_local/search",
+    "--local",
+    "3"
+  ],
+  "started_utc": "2026-11-04T03:34:19.213646+00:00",
+  "hostname": "sr29",
+  "slurm_job_id": "32870354",
+  "slurm_array_job_id": "32870327",
+  "slurm_array_task_id": "24",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ete3": "3.1.3",
+    "matplotlib": "3.8.4"
+  },
+  "finished_utc": "2026-11-04T03:40:36.267406+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 377.02,
+  "peak_rss_kib": 335648,
+  "peak_rss_gib": 0.320098876953125,
+  "user_seconds": 2215.82,
+  "system_seconds": 29.04,
+  "recommendation": {
+    "ensemble_size": 3,
+    "ks": [
+      10,
+      20,
+      39
+    ],
+    "weights": [
+      0.15,
+      0.8,
+      0.05
+    ],
+    "rho": 0.6325837738897266,
+    "gap_to_stage_best": 0.0
+  },
+  "stages": [
+    {
+      "ensemble_size": 1,
+      "n_combinations": 35,
+      "best": {
+        "ensemble_size": 1,
+        "ks": [
+          20
+        ],
+        "weights": [
+          1.0
+        ],
+        "rho": 0.6235765001869459,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 2,
+      "n_combinations": 217,
+      "best": {
+        "ensemble_size": 2,
+        "ks": [
+          10,
+          20
+        ],
+        "weights": [
+          0.15,
+          0.85
+        ],
+        "rho": 0.6322089266073334,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 3,
+      "n_combinations": 1323,
+      "best": {
+        "ensemble_size": 3,
+        "ks": [
+          10,
+          20,
+          39
+        ],
+        "weights": [
+          0.15,
+          0.8,
+          0.05
+        ],
+        "rho": 0.6325837738897266,
+        "gap_to_stage_best": 0.0
+      }
+    }
+  ],
+  "stop_reason": "max_kmers_reached"
+}

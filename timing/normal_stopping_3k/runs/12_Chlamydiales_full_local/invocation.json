@@ -1,0 +1,135 @@
+{
+  "task": {
+    "task_id": 12,
+    "dataset": "Chlamydiales",
+    "distance_type": "full",
+    "mode": "local",
+    "delta_k": 3,
+    "n_genomes": 288,
+    "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Chlamydiales/reference.nwk",
+    "tree_sha256": "c0153c8a8ca92c407dac67df1a1ee953d3d5455373b2b8224514d5fabbc22cae",
+    "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Chlamydiales/excluded_genomes.txt",
+    "exclude_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/full",
+    "index_manifest_sha256": "440d2fde1ef0b7aedbca8ebf61da3dcb6530929a165a3990331e3663d5a2b50b",
+    "baseline_run": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/12_Chlamydiales_full_local/search/run.json",
+    "baseline_run_sha256": "abcc6bc8b80c267addb6fe428e7a248aade2e695384d88739446bd5fce9a3a53",
+    "baseline_recommendation": {
+      "ensemble_size": 3,
+      "ks": [
+        9,
+        17,
+        22
+      ],
+      "weights": [
+        0.45,
+        0.3,
+        0.25
+      ],
+      "rho": 0.5254358896540202,
+      "gap_to_stage_best": 0.0
+    },
+    "baseline_stages": [
+      {
+        "ensemble_size": 1,
+        "n_combinations": 35,
+        "best": {
+          "ensemble_size": 1,
+          "ks": [
+            20
+          ],
+          "weights": [
+            1.0
+          ],
+          "rho": 0.42403796048891923,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 2,
+        "n_combinations": 217,
+        "best": {
+          "ensemble_size": 2,
+          "ks": [
+            9,
+            18
+          ],
+          "weights": [
+            0.45,
+            0.55
+          ],
+          "rho": 0.5132144504434295,
+          "gap_to_stage_best": 0.0
+        }
+      },
+      {
+        "ensemble_size": 3,
+        "n_combinations": 1323,
+        "best": {
+          "ensemble_size": 3,
+          "ks": [
+            9,
+            17,
+            22
+          ],
+          "weights": [
+            0.45,
+            0.3,
+            0.25
+          ],
+          "rho": 0.5254358896540202,
+          "gap_to_stage_best": 0.0
+        }
+      }
+    ],
+    "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/12_Chlamydiales_full_local"
+  },
+  "command": [
+    "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+    "search",
+    "--tree",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Chlamydiales/reference.nwk",
+    "--index",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/full",
+    "--exclude-genomes",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/inputs/Chlamydiales/excluded_genomes.txt",
+    "--max-kmers",
+    "3",
+    "--k-low",
+    "6",
+    "--k-high",
+    "40",
+    "--w-step",
+    "0.05",
+    "--improvement-tol",
+    "1e-12",
+    "--threads",
+    "8",
+    "--output",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/normal_stopping_3k/runs/12_Chlamydiales_full_local/search",
+    "--local",
+    "3"
+  ],
+  "started_utc": "2026-11-04T03:34:19.112494+00:00",
+  "hostname": "sr21",
+  "slurm_job_id": "32870342",
+  "slurm_array_job_id": "32870327",
+  "slurm_array_task_id": "12",
+  "cpu_affinity": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ete3": "3.1.3",
+    "matplotlib": "3.8.4"
+  }
+}
