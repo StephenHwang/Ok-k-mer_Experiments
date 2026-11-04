@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "okkmer_version": "0.1.0",
+  "created_utc": "2026-11-03T21:08:51.075534+00:00",
+  "metric": "jaccard_distance",
+  "genomes": [
+    "GCA_000176735.1",
+    "GCA_000952795.1",
+    "GCA_001067655.1",
+    "GCA_002777825.1",
+    "GCA_003028315.1",
+    "GCA_016864895.1",
+    "GCA_017114885.1",
+    "GCA_017446355.1",
+    "GCA_017458185.1",
+    "GCA_017508845.1",
+    "GCA_017518785.1",
+    "GCA_017518845.1",
+    "GCA_017553165.1",
+    "GCA_017645365.1",
+    "GCA_017934045.1",
+    "GCA_017989485.1",
+    "GCA_017991555.1",
+    "GCA_024103515.1",
+    "GCA_029433475.1",
+    "GCA_029984035.1",
+    "GCA_030146285.1",
+    "GCA_030146515.1",
+    "GCA_030150505.1",
+    "GCA_030151665.1",
+    "GCA_030528345.1",
+    "GCA_030528455.1",
+    "GCA_030530545.1",
+    "GCA_030531795.1",
+    "GCA_030532645.1",
+    "GCA_030537065.1",
+    "GCA_030538055.1",
+    "GCA_030538415.1",
+    "GCA_905373195.1",
+    "GCA_905373555.1",
+    "GCA_915066515.1",
+    "GCA_916438535.1",
+    "GCA_916720425.1",
+    "GCA_923184405.1",
+    "GCA_927911515.1",
+    "GCA_937919795.1",
+    "GCA_943913135.1",
+    "GCA_943913655.1",
+    "GCA_943914555.1",
+    "GCA_946481965.1",
+    "GCA_947097615.1",
+    "GCF_000190695.1",
+    "GCF_000193735.1",
+    "GCF_000193795.1",
+    "GCF_000226875.1",
+    "GCF_000227275.1",
+    "GCF_000227765.1",
+    "GCF_000260655.1",
+    "GCF_000382305.1",
+    "GCF_000428785.1",
+    "GCF_000600005.1",
+    "GCF_000745895.1",
+    "GCF_000745955.1",
+    "GCF_001308015.1",
+    "GCF_001457815.1",
+    "GCF_001590725.1",
+    "GCF_001592185.1",
+    "GCF_001618065.1",
+    "GCF_001618075.1",
+    "GCF_001618085.1",
+    "GCF_001648355.1",
+    "GCF_001648475.1",
+    "GCF_001809325.1",
+    "GCF_001815675.1",
+    "GCF_002216145.1",
+    "GCF_002237445.1",
+    "GCF_002327085.1",
+    "GCF_002777425.1",
+    "GCF_002777745.1",
+    "GCF_002777855.1",
+    "GCF_002847985.1",
+    "GCF_002951835.1",
+    "GCF_003013245.1",
+    "GCF_003044425.1",
+    "GCF_003044445.1",
+    "GCF_003044565.1",
+    "GCF_003044645.1",
+    "GCF_003044935.1",
+    "GCF_003315235.1",
+    "GCF_003990355.1",
+    "GCF_004341385.1",
+    "GCF_005221285.1",
+    "GCF_005221305.1",
+    "GCF_005886145.1",
+    "GCF_008805035.1",
+    "GCF_008807015.1",
+    "GCF_009671065.1",
+    "GCF_013267835.1",
+    "GCF_014054525.1",
+    "GCF_014054725.1",
+    "GCF_014054945.1",
+    "GCF_014054985.1",
+    "GCF_014055005.1",
+    "GCF_014055025.1",
+    "GCF_014297595.1",
+    "GCF_014898075.1",
+    "GCF_016025525.2",
+    "GCF_016894345.1",
+    "GCF_017753665.1",
+    "GCF_019334725.1",
+    "GCF_022288825.1",
+    "GCF_022354465.1",
+    "GCF_022749495.1",
+    "GCF_022749515.1",
+    "GCF_022870865.1",
+    "GCF_022870885.1",
+    "GCF_022870905.1",
+    "GCF_023472875.1",
+    "GCF_024170405.1",
+    "GCF_024171525.1",
+    "GCF_024205705.1",
+    "GCF_024205745.1",
+    "GCF_024580525.1",
+    "GCF_024834045.1",
+    "GCF_026535915.1",
+    "GCF_028463985.1",
+    "GCF_028776105.1",
+    "GCF_030177895.1",
+    "GCF_030504625.1",
+    "GCF_030523955.1",
+    "GCF_030525755.1",
+    "GCF_030527935.1",
+    "GCF_030527965.1",
+    "GCF_030530745.1",
+    "GCF_900111845.1",
+    "GCF_900113545.1",
+    "GCF_900187105.1",
+    "GCF_900187305.1",
+    "GCF_900451175.1",
+    "GCF_900475315.1",
+    "GCF_900636515.1",
+    "GCF_900636765.1",
+    "GCF_900637855.1",
+    "GCF_900638555.1",
+    "GCF_900638685.1",
+    "GCF_901482445.1",
+    "GCF_914768025.1",
+    "GCF_914768045.1",
+    "GCF_943181435.1",
+    "GCF_946478525.1",
+    "GCF_946902045.1",
+    "GCF_962719845.1",
+    "GCF_962747995.1"
+  ],
+  "ks": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "pair_order": "upper_triangle_row_major",
+  "n_pairs": 10731,
+  "distances_sha256": "deb00cf82c577f94c67844e7e4b2acaefbb6445bdbf915317fe642e4b64f320a",
+  "input_kind": "distance",
+  "sources": [
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k6.tsv",
+      "sha256": "6fc8ebe5563513e7a0e19475b4985a1a6fbeb7b659eedec1cf688e382bba630c"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k7.tsv",
+      "sha256": "75a7d1bf4067c7d2b8a24dc0a03186caef5e946eb571a015f505fb97227a8be2"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k8.tsv",
+      "sha256": "6d73a69adb1d5861c689e648794852f87c3936f787c59c53b406dcf87d0a230b"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k9.tsv",
+      "sha256": "420e9f76da208e22bf8bc53fa17d7717c93daf849801a7656b7873092dfaf68a"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k10.tsv",
+      "sha256": "e5b2e1a3a3b59778df488f9ceb743701ff04ae42f4d1eb41d5311a3045020913"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k11.tsv",
+      "sha256": "de4b80ed695767be4e7e4c9b340ad618ede3a12a11ece4d3a514a45ac9ba28e3"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k12.tsv",
+      "sha256": "e0576b0d4803c5ea7bdd5b4b409505c0ed1e50fab8707af75c50be5694e192f4"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k13.tsv",
+      "sha256": "ca9a8c456fc7909c625b07741487326fef4c6e072690ffea3d17397269ab0c6d"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k14.tsv",
+      "sha256": "c427c6afe09b09b921c8809e9364587c94817ae3e8a7afe025ef016e9d44a7b8"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k15.tsv",
+      "sha256": "cb0b0000f6e001a646b299dd6d2c0a94438bbb87e0e149ed8290899c1c7c2b6e"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k16.tsv",
+      "sha256": "628cf592fdf8e185de898f435920666ca152aa213fe58a26bcf9450e2455536b"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k17.tsv",
+      "sha256": "9dceea54c6157b48ff47634a6d51c84f775c308c4e9cd16650cdc29b927865bb"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k18.tsv",
+      "sha256": "7426751c0191552f928c7a612a30f26eba5c6da156776c629db4422aca3e3230"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k19.tsv",
+      "sha256": "e4277f36b79a4bc3bbdb4221990cffeb6fcda6598ca546a2f83cd28a6e06f256"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k20.tsv",
+      "sha256": "1720dff8211b2e3ff02c30065fa4428110c85750774915067e62578006378ba4"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k21.tsv",
+      "sha256": "cd0c0d5b36e018b13a565a6e3ff4b111b4c80534f25e6e0b1ca2f2e71e18bd1d"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k22.tsv",
+      "sha256": "ab85940af34e9aae24aee48d7b498ddebc9c39dea248948b0df1c81bdd47688a"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k23.tsv",
+      "sha256": "2cf1934446a82eb681fe95a7428b13da1dccce25c6d40ad396aba3b0534d3f8d"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k24.tsv",
+      "sha256": "f4f958474d7674d8d40bc905c0ec6db6e7080857788a7df3da717733af189dc5"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k25.tsv",
+      "sha256": "e10edb5e1ddfddee2d17b49a610b8019bf22be59d1aa51133b87e9025ea27ec1"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k26.tsv",
+      "sha256": "9bb385faae6330631216a8c02fd38f449ff580209fcbdbfb181553d36ebe129f"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k27.tsv",
+      "sha256": "0f69f996860e3eba15d915a33a49971db6ef34106032c70e9c2deef8b3831ea8"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k28.tsv",
+      "sha256": "9147e955c80525be7de1fad9e1add7afcc8228982243604d2e7766b74b991dc2"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k29.tsv",
+      "sha256": "63c238d8fb5ef25e400845de016f976f62722d15d542ec54a1f8e718e85ab7b0"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k30.tsv",
+      "sha256": "10d0615a1ff2bec24f5154adf3af9ca7ceccc80a2de52dbb70a2dd5d02309892"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k31.tsv",
+      "sha256": "25a8152b7b43f03cdf2e4d32f436b9f60df674ee7558ffbb2be56a6c4ec6c73e"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k32.tsv",
+      "sha256": "94499d60d88b6e7df519d346ddba4edd53673c0813772ef9a9a40066a79d67e7"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k33.tsv",
+      "sha256": "d21dfb48a913fa52e45f9f6f619f7f3d1bf43906d8f21eeea41f60333eb1a429"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k34.tsv",
+      "sha256": "db1c6aeb10850007567dce37cae368000df41f5804e91d5485fe8124da113778"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k35.tsv",
+      "sha256": "70c1a329e85b3e362fa4e80787fc2780f1cc950494549bf888cada0aa3ad150e"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k36.tsv",
+      "sha256": "3babd710b18d7e359e7f3f33d7122fa2218e48d08a84d8ba7e679669c37ed91e"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k37.tsv",
+      "sha256": "450afeb3c63c23f418524199728479373825ad17da062f5e179a8f78b5726e29"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k38.tsv",
+      "sha256": "f2b06b0b412e427f95dd78418bc3fa6ef90ae0cd007b6154d5eea4057a7e1689"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k39.tsv",
+      "sha256": "c6272c4d2a29c863b6a66535a033b03038e1789402af5db33d905c592ce53bcf"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k40.tsv",
+      "sha256": "2961a9735dba5bc6b2beb24cc2338ebb2fda6e6803d04028670d7260d14d11fb"
+    }
+  ],
+  "provenance": {
+    "source_kind": "distances",
+    "genome_map": {
+      "path": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/sketch/genome_map.tsv",
+      "sha256": "2d3e713d44188f7bb7c14cc829e7a7c62b605350a26b54d131777fdcf857d795"
+    }
+  }
+}

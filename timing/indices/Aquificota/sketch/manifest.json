@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "okkmer_version": "0.1.0",
+  "created_utc": "2026-11-03T21:08:32.974513+00:00",
+  "metric": "jaccard_distance",
+  "genomes": [
+    "GCA_002341805.1",
+    "GCA_002878035.1",
+    "GCA_002878215.1",
+    "GCA_003543175.1",
+    "GCA_003696155.1",
+    "GCA_003972855.1",
+    "GCA_003978105.1",
+    "GCA_003978485.1",
+    "GCA_003978565.1",
+    "GCA_003978675.1",
+    "GCA_003978805.1",
+    "GCA_003978875.1",
+    "GCA_009903855.1",
+    "GCA_011375045.1",
+    "GCA_012961365.1",
+    "GCA_012962155.1",
+    "GCA_013153235.1",
+    "GCA_013153295.1",
+    "GCA_013153315.1",
+    "GCA_013153455.1",
+    "GCA_013153495.1",
+    "GCA_013153635.1",
+    "GCA_013153765.1",
+    "GCA_013153795.1",
+    "GCA_013154305.1",
+    "GCA_013154375.1",
+    "GCA_015487365.1",
+    "GCA_015487405.1",
+    "GCA_015487535.1",
+    "GCA_015487615.1",
+    "GCA_015487835.1",
+    "GCA_015488335.1",
+    "GCA_015490105.1",
+    "GCA_015490115.1",
+    "GCA_015490155.1",
+    "GCA_015490195.1",
+    "GCA_015490215.1",
+    "GCA_015490675.1",
+    "GCA_015491275.1",
+    "GCA_015492115.1",
+    "GCA_015519975.1",
+    "GCA_015661465.1",
+    "GCA_015661865.1",
+    "GCA_015662815.1",
+    "GCA_018771605.1",
+    "GCA_020833645.1",
+    "GCA_022759285.1",
+    "GCA_023255875.1",
+    "GCA_023269915.1",
+    "GCA_024280065.1",
+    "GCA_025056375.1",
+    "GCA_025057245.1",
+    "GCA_025057455.1",
+    "GCA_025057715.1",
+    "GCA_025062075.1",
+    "GCA_026414575.1",
+    "GCA_026418455.1",
+    "GCA_026418535.1",
+    "GCA_026981975.1",
+    "GCA_026982025.1",
+    "GCA_026983685.1",
+    "GCA_026984355.1",
+    "GCA_026984415.1",
+    "GCA_026985705.1",
+    "GCA_026987075.1",
+    "GCA_026987085.1",
+    "GCA_026987115.1",
+    "GCA_026988135.1",
+    "GCA_027002265.1",
+    "GCA_027013575.1",
+    "GCA_027014155.1",
+    "GCA_027014185.1",
+    "GCA_027028005.1",
+    "GCA_027030405.1",
+    "GCA_027030485.1",
+    "GCA_027035985.1",
+    "GCA_027036735.1",
+    "GCA_027037055.1",
+    "GCA_027049085.1",
+    "GCA_027049315.1",
+    "GCA_027051905.1",
+    "GCA_027052485.1",
+    "GCA_027058925.1",
+    "GCA_027063785.1",
+    "GCA_027064485.1",
+    "GCA_027068415.1",
+    "GCA_027075275.1",
+    "GCA_027078675.1",
+    "GCA_027079305.1",
+    "GCA_027081375.1",
+    "GCA_027084095.1",
+    "GCA_028276405.1",
+    "GCA_028276475.1",
+    "GCA_030549905.1",
+    "GCA_030949555.1",
+    "GCA_030950545.1",
+    "GCA_913055135.1",
+    "GCA_938002625.1",
+    "GCA_938048815.1",
+    "GCF_000008625.1",
+    "GCF_000010785.1",
+    "GCF_000020325.1",
+    "GCF_000021545.1",
+    "GCF_000021565.1",
+    "GCF_000025605.1",
+    "GCF_000173615.1",
+    "GCF_000185805.1",
+    "GCF_000191045.1",
+    "GCF_000213785.1",
+    "GCF_000421485.1",
+    "GCF_000512735.1",
+    "GCF_000619805.1",
+    "GCF_000702425.1",
+    "GCF_000703085.1",
+    "GCF_001968985.1",
+    "GCF_003633715.1",
+    "GCF_003664005.1",
+    "GCF_003688665.1",
+    "GCF_004339575.1",
+    "GCF_011006175.1",
+    "GCF_015487465.1",
+    "GCF_016617615.1",
+    "GCF_027023985.1",
+    "GCF_027448985.1",
+    "GCF_028276765.1",
+    "GCF_900142435.1",
+    "GCF_900182585.1",
+    "GCF_900182795.1",
+    "GCF_900182835.1",
+    "GCF_900188395.1",
+    "GCF_900215515.1",
+    "GCF_900215655.1"
+  ],
+  "ks": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "pair_order": "upper_triangle_row_major",
+  "n_pairs": 8646,
+  "distances_sha256": "2ad3f462428a34968ac0c15db5cb044f571f22d3e78b02f187d77b260cdaf95c",
+  "input_kind": "distance",
+  "sources": [
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k6.tsv",
+      "sha256": "d772f2e76e95a403c50a27cdeb7f5de9fb567e019b5267c963fc7f41c48f5481"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k7.tsv",
+      "sha256": "d4455f7400f13f6848869efb11a5d95d40e92148b6d82a172166298ec77319e4"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k8.tsv",
+      "sha256": "303835bf3c47d0db735268744583c654af9e273318166866cbdba5cc9d73b781"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k9.tsv",
+      "sha256": "712efd4a906f37e3d9efdb9ad7f00f78430b632213f4bf38170f26f8674b6299"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k10.tsv",
+      "sha256": "25637d9541a5bdb1586cace4e8ffc8e3c61d68ba3fc0908d6802f5e049f8da01"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k11.tsv",
+      "sha256": "c66f882a8a7a09034d0b5615ec6b58fa97622cdc00c191d32f59b66541c7d959"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k12.tsv",
+      "sha256": "da8a5c9d609c1ca1bb0730915eaab05118d7c921247b9e8a1dc3967fcee06c6d"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k13.tsv",
+      "sha256": "b3de3fc5c629cab4c4e83ee87042becf460afc7f4767a5e21a5a91e7696c6a99"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k14.tsv",
+      "sha256": "05b4268c4c8c9fce40935f8195bf2a75a6a5b98bf9ca68ac5ef83a54c894a587"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k15.tsv",
+      "sha256": "fe45d5bdf57ce3a8f2f1bb2f9c3b7748bb6e13d1ac320370d090b430715a8238"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k16.tsv",
+      "sha256": "7c03b293521057c0c2bd86010c1d0261464a37254d3a7986a4ede74c340a7e06"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k17.tsv",
+      "sha256": "00ceeeb9073c8d2c9c51e8404fa363502f7c3369f5d635885893fa9f83ff8aaa"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k18.tsv",
+      "sha256": "cdfcf007c613bcb0b6d2d4ea9060ec7c590a7f563aa3047f6168e4553fb13009"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k19.tsv",
+      "sha256": "474dde3bb894d0286f737157daaa74e5a0f5c26000bb3ad3611b09132215d92c"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k20.tsv",
+      "sha256": "65a00539d9830ceefbc041f061c1b6fd3491ff81034014d88812aee21238d51a"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k21.tsv",
+      "sha256": "5bd337dec49fab9a4194f19ab157b76ec4976579cf0b6ff62df7c4e436f6896e"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k22.tsv",
+      "sha256": "becc798af444a83b7762308700c3153388f7fd6914d7bbf0587f9b5131837ca5"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k23.tsv",
+      "sha256": "574ba84b7a36a3b4c0572021c299548ddbfe2506635c45d81856f0d72c006fe4"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k24.tsv",
+      "sha256": "e57467f0476213aa42beb6c28cbb8c2774d739abfff4c5336228147239de5fd7"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k25.tsv",
+      "sha256": "b2143bb8ccb6f257e3e53a925e04ebcd72fc5f0366a002a819e19b24d40e072b"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k26.tsv",
+      "sha256": "4148d9f5026f403c06ec37ffc13fe80319d6ad723db2ab65056c1547411dab7a"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k27.tsv",
+      "sha256": "20643bda20d4bca696640f96073e8c5659dc546a65fcaf33176c40c69b1c8dd6"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k28.tsv",
+      "sha256": "5d03c39cb228d8ee1638ecef8b2f9b4f6db300016e3077ac8901a81113b49de9"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k29.tsv",
+      "sha256": "175212e0327f16617979e7c4711b14d1dbf1e33c016d42eee5fc82534b3e1a93"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k30.tsv",
+      "sha256": "5498bd9c4d7d5a0bfd3bec92a96124027332c10557bcc14ccf3dbebc18341e5d"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k31.tsv",
+      "sha256": "d11ba4456ead7006a5941810c6076e9583ca7c609e413025b0a8ef8e0bf85903"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k32.tsv",
+      "sha256": "684a68e9d6aaa4fd9661846584cee286e7d168bafe198796128a27b186d07af4"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k33.tsv",
+      "sha256": "b8e1584d6abf4058e82fba9ff33f887940ba78dddaaa913b3210ae4640e0509c"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k34.tsv",
+      "sha256": "31913b81b2152e5f0ebee84ecfea1343c60f4cdee0c8ea6749523e41a83e123c"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k35.tsv",
+      "sha256": "d8f60a2cb79dc2327315b68cf9ac8457aa77265082dd5fc4ae07ebb22c92385b"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k36.tsv",
+      "sha256": "c2f44b96b61a482cc2dc24666e6c03083e107f6f09eb66c50cfb7cfab85d9344"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k37.tsv",
+      "sha256": "697e36f83119d1158deefb434a5a0411a8887d26aa9e2e0a35a21243f296353e"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k38.tsv",
+      "sha256": "b978ad9c7eb80fe54f93d471b6a789b40f232ac097615d6ae80b284100d3623f"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k39.tsv",
+      "sha256": "679a9fd8f6b5ded03236bdbc4a9feedc060272e564de0b23c4845b39d8148cbc"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k40.tsv",
+      "sha256": "7d3d50f1ab7159b1f917720d811d45bd91f1381450318d8b8aa7f473540c2396"
+    }
+  ],
+  "provenance": {
+    "source_kind": "distances",
+    "genome_map": {
+      "path": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/sketch/genome_map.tsv",
+      "sha256": "1357db61dfc13b3f1751e9b5f294022d182160e2b8815dda7d1018e83892d2fa"
+    }
+  }
+}

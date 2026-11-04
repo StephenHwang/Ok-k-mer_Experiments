@@ -1,0 +1,2 @@
+{"changed_utc": "2026-11-03T21:11:29.362416+00:00", "job_id": "32858928", "previous_throttle": 8, "requested_throttle": 32, "command": ["scontrol", "update", "JobId=32858928", "ArrayTaskThrottle=32"], "stdout": "", "stderr": "32858928_0,2,4,6: Job has already finished\n", "returncode": 1}
+{"verified_utc": "2026-11-03T21:13:22.429402+00:00", "job_id": "32858928", "verified_throttle": 32, "status": "applied", "note": "Slurm returned nonzero for already-finished tasks, but all remaining array tasks report ArrayTaskThrottle=32; none remain pending."}

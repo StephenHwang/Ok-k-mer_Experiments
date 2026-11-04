@@ -1,0 +1,33 @@
+task_id	input_id	dataset	distance_type	mode	delta_k	n_genomes	threads	output
+0	0	Aquificota	full	local	3	132	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/00_Aquificota_full_local
+1	0	Aquificota	full	global		132	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/01_Aquificota_full_global
+2	1	Aquificota	sketch	local	3	132	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/02_Aquificota_sketch_local
+3	1	Aquificota	sketch	global		132	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/03_Aquificota_sketch_global
+4	2	Bacillales_A	full	local	3	249	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/04_Bacillales_A_full_local
+5	2	Bacillales_A	full	global		249	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/05_Bacillales_A_full_global
+6	3	Bacillales_A	sketch	local	3	249	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/06_Bacillales_A_sketch_local
+7	3	Bacillales_A	sketch	global		249	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/07_Bacillales_A_sketch_global
+8	4	Caldisericia	full	local	3	49	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/08_Caldisericia_full_local
+9	4	Caldisericia	full	global		49	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/09_Caldisericia_full_global
+10	5	Caldisericia	sketch	local	3	49	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/10_Caldisericia_sketch_local
+11	5	Caldisericia	sketch	global		49	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/11_Caldisericia_sketch_global
+12	6	Chlamydiales	full	local	3	288	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/12_Chlamydiales_full_local
+13	6	Chlamydiales	full	global		288	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/13_Chlamydiales_full_global
+14	7	Chlamydiales	sketch	local	3	288	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/14_Chlamydiales_sketch_local
+15	7	Chlamydiales	sketch	global		288	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/15_Chlamydiales_sketch_global
+16	8	Cyanobacteriales	full	local	3	585	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/16_Cyanobacteriales_full_local
+17	8	Cyanobacteriales	full	global		585	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/17_Cyanobacteriales_full_global
+18	9	Cyanobacteriales	sketch	local	3	585	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/18_Cyanobacteriales_sketch_local
+19	9	Cyanobacteriales	sketch	global		585	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/19_Cyanobacteriales_sketch_global
+20	10	Neisseriaceae	full	local	3	145	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/20_Neisseriaceae_full_local
+21	10	Neisseriaceae	full	global		145	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/21_Neisseriaceae_full_global
+22	11	Neisseriaceae	sketch	local	3	145	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/22_Neisseriaceae_sketch_local
+23	11	Neisseriaceae	sketch	global		145	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/23_Neisseriaceae_sketch_global
+24	12	Anaerolineales	full	local	3	525	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/24_Anaerolineales_full_local
+25	12	Anaerolineales	full	global		525	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/25_Anaerolineales_full_global
+26	13	Anaerolineales	sketch	local	3	525	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/26_Anaerolineales_sketch_local
+27	13	Anaerolineales	sketch	global		525	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/27_Anaerolineales_sketch_global
+28	14	Dethiobacteria	full	local	3	102	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/28_Dethiobacteria_full_local
+29	14	Dethiobacteria	full	global		102	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/29_Dethiobacteria_full_global
+30	15	Dethiobacteria	sketch	local	3	102	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/30_Dethiobacteria_sketch_local
+31	15	Dethiobacteria	sketch	global		102	8	/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/31_Dethiobacteria_sketch_global

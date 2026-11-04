@@ -1,0 +1,160 @@
+{
+  "task": {
+    "task_id": 14,
+    "input_id": 7,
+    "dataset": "Chlamydiales",
+    "distance_type": "sketch",
+    "mode": "local",
+    "delta_k": 3,
+    "n_genomes": 288,
+    "threads": 8,
+    "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/14_Chlamydiales_sketch_local"
+  },
+  "command": [
+    "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+    "search",
+    "--tree",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/reference.nwk",
+    "--index",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/sketch",
+    "--k-low",
+    "6",
+    "--k-high",
+    "40",
+    "--max-kmers",
+    "3",
+    "--w-step",
+    "0.05",
+    "--threads",
+    "8",
+    "--exclude-genomes",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/excluded_genomes.txt",
+    "--output",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/14_Chlamydiales_sketch_local/search",
+    "--local",
+    "3",
+    "--no-early-stop"
+  ],
+  "started_utc": "2026-11-03T21:11:31.117892+00:00",
+  "hostname": "sr10",
+  "slurm_job_id": "32859031",
+  "slurm_array_job_id": "32858928",
+  "slurm_array_task_id": "14",
+  "allocated_cpus": "8",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    11
+  ],
+  "index_manifest_sha256": "ddc0c77828756f2c59aba1f2fe47b4fbf352661de50ceefe5ab29cf1e4150f83",
+  "tree_sha256": "c0153c8a8ca92c407dac67df1a1ee953d3d5455373b2b8224514d5fabbc22cae",
+  "source_snapshot": {
+    "code_snapshot/working_tree.patch": "ad194cb1f67e8369a3c68621e9d45c663d01cb36a55ec9e17fab52599a463467",
+    "code_snapshot/pyproject.toml": "365da99bec967c138d877032efd62f03512befeb0887124c52616282476e1fca",
+    "code_snapshot/src/okkmer/search.py": "4b98973ddcaa784e13c5fe195dcc45514d67470232587ff04afc0eed986cf93c",
+    "code_snapshot/src/okkmer/cli.py": "5628ea5ba21c39ba98e067310ab306c0a4cbd020af353b93c15b60f67bd5dc10",
+    "code_snapshot/src/okkmer/io.py": "db96b18d9d2e34218b44db1764953f6fe07930d17db3be707035364ec09bf69f",
+    "code_snapshot/src/okkmer/index.py": "f91835af9fbd737041d7ec48b77884057db5f00aa9d764ed73e38796ed0156b1",
+    "code_snapshot/src/okkmer/__init__.py": "42b32394258ba4a37e73a2a7834e251062410e87cd31c01c9c31e1c758ccd199",
+    "code_snapshot/src/okkmer/plotting.py": "570815feac2924b4127919044de8b3fc568c33d0374d0501b826bbe8cbe6c5c4",
+    "code_snapshot/src/okkmer/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "code_snapshot/src/okkmer/scoring.py": "99e589ec5cc2a95ce7b93c8ccc669388294b632797c9d5a2d81e5189ad91e94e"
+  },
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ete3": "3.1.3",
+    "matplotlib": "3.8.4"
+  },
+  "environment": {
+    "PYTHONPATH": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/code_snapshot/src",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "LC_ALL": "C"
+  },
+  "finished_utc": "2026-11-03T21:12:57.436554+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 86.28,
+  "user_seconds": 434.32,
+  "system_seconds": 15.55,
+  "peak_rss_kib": 194220,
+  "peak_rss_gib": 0.18522262573242188,
+  "time_exit_status": 0,
+  "recommendation": {
+    "ensemble_size": 3,
+    "ks": [
+      10,
+      19,
+      31
+    ],
+    "weights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "rho": 0.45531070028677284,
+    "gap_to_stage_best": 0.0
+  },
+  "stages": [
+    {
+      "ensemble_size": 1,
+      "n_combinations": 35,
+      "best": {
+        "ensemble_size": 1,
+        "ks": [
+          11
+        ],
+        "weights": [
+          1.0
+        ],
+        "rho": 0.34870490005645716,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 2,
+      "n_combinations": 217,
+      "best": {
+        "ensemble_size": 2,
+        "ks": [
+          10,
+          31
+        ],
+        "weights": [
+          0.55,
+          0.45
+        ],
+        "rho": 0.4162569484821284,
+        "gap_to_stage_best": 0.0
+      }
+    },
+    {
+      "ensemble_size": 3,
+      "n_combinations": 1323,
+      "best": {
+        "ensemble_size": 3,
+        "ks": [
+          10,
+          19,
+          31
+        ],
+        "weights": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "rho": 0.45531070028677284,
+        "gap_to_stage_best": 0.0
+      }
+    }
+  ],
+  "stop_reason": "max_kmers_reached"
+}

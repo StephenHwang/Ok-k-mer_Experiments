@@ -1,0 +1,2 @@
+Global candidate-weight upper bounds: 1 lengths: 35, 2 lengths: 11,305, 3 lengths: 1,119,195
+Recommended [10, 19, 31] with weights [0.4, 0.3, 0.3]; rho=0.4553107003 (max_kmers_reached)

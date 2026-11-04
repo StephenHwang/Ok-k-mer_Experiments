@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "okkmer_version": "0.1.0",
+  "created_utc": "2026-11-03T21:09:11.050826+00:00",
+  "metric": "jaccard_distance",
+  "genomes": [
+    "GCA_001512835.1",
+    "GCA_002292015.1",
+    "GCA_002385745.1",
+    "GCA_002479415.1",
+    "GCA_003444595.1",
+    "GCA_003456095.1",
+    "GCA_003550565.1",
+    "GCA_003550645.1",
+    "GCA_003551865.1",
+    "GCA_003552365.1",
+    "GCA_003553305.1",
+    "GCA_003553895.1",
+    "GCA_003554395.1",
+    "GCA_003554525.1",
+    "GCA_003554535.1",
+    "GCA_003554615.1",
+    "GCA_003555415.1",
+    "GCA_003556225.1",
+    "GCA_003558195.1",
+    "GCA_003560915.1",
+    "GCA_003561325.1",
+    "GCA_003561835.1",
+    "GCA_003562605.1",
+    "GCA_003563385.1",
+    "GCA_003563895.1",
+    "GCA_003564055.1",
+    "GCA_003564505.1",
+    "GCA_003566935.1",
+    "GCA_003567725.1",
+    "GCA_003605065.1",
+    "GCA_007119335.1",
+    "GCA_007119615.1",
+    "GCA_007119965.1",
+    "GCA_007120745.1",
+    "GCA_007120815.1",
+    "GCA_007121075.1",
+    "GCA_007121375.1",
+    "GCA_007122565.1",
+    "GCA_007126465.1",
+    "GCA_007127255.1",
+    "GCA_007128625.1",
+    "GCA_007129055.1",
+    "GCA_007130585.1",
+    "GCA_007130825.1",
+    "GCA_007131175.1",
+    "GCA_007131435.1",
+    "GCA_007132095.1",
+    "GCA_007135125.1",
+    "GCA_007136055.1",
+    "GCA_007136165.1",
+    "GCA_011389985.1",
+    "GCA_012510305.1",
+    "GCA_012510325.1",
+    "GCA_012510625.1",
+    "GCA_012512665.1",
+    "GCA_012512705.1",
+    "GCA_012518215.1",
+    "GCA_012518675.1",
+    "GCA_012520035.1",
+    "GCA_012521345.1",
+    "GCA_012521405.1",
+    "GCA_012522075.1",
+    "GCA_012522335.1",
+    "GCA_012523945.1",
+    "GCA_012727685.1",
+    "GCA_012728375.1",
+    "GCA_012797095.1",
+    "GCA_012797175.1",
+    "GCA_012798755.1",
+    "GCA_012798895.1",
+    "GCA_012799185.1",
+    "GCA_012800215.1",
+    "GCA_012800795.1",
+    "GCA_012800855.1",
+    "GCA_012837615.1",
+    "GCA_012839215.1",
+    "GCA_012840855.1",
+    "GCA_012841735.1",
+    "GCA_016841605.1",
+    "GCA_016874655.1",
+    "GCA_018333395.1",
+    "GCA_018333405.1",
+    "GCA_018333455.1",
+    "GCA_018333635.1",
+    "GCA_018335695.1",
+    "GCA_018335855.1",
+    "GCA_018335875.1",
+    "GCA_018400435.1",
+    "GCA_018725345.1",
+    "GCA_018725565.1",
+    "GCA_019428945.1",
+    "GCA_020060185.1",
+    "GCA_020060545.1",
+    "GCA_020725465.1",
+    "GCA_020725665.1",
+    "GCA_024650095.1",
+    "GCA_029552125.1",
+    "GCA_029778075.1",
+    "GCA_029782095.1",
+    "GCA_030611385.1",
+    "GCA_030656575.1",
+    "GCA_937973635.1"
+  ],
+  "ks": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "pair_order": "upper_triangle_row_major",
+  "n_pairs": 5151,
+  "distances_sha256": "a4383b7be6eddcf625fb25d7081daaca7f61edb13873660eb91f0190d7c5d432",
+  "input_kind": "distance",
+  "sources": [
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k6.tsv",
+      "sha256": "d44728fb77dc9773d1e8edb3350587fc38ab3bb84387b9729a9acf2ccebf9a2f"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k7.tsv",
+      "sha256": "3a9d40c63430fc2563cf6a3ba93b6e3f34ce48a3d8bef73c4fff711b03be8996"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k8.tsv",
+      "sha256": "cc79299c7818bd93f3e5dfafa893bc9942bec92b31b22f870a04e2d56d2f4492"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k9.tsv",
+      "sha256": "ec793d61d6ad4d044f157c4b1d272e07ad59de199b4f10892e556e1a7cf67323"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k10.tsv",
+      "sha256": "9a03d3776c6c09ad0a9c080e240855a07470b806a4cbd4f0f7f22b699f9210f8"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k11.tsv",
+      "sha256": "b6e9af131f529f79d075c8defc60ff8af37f21f7cd61e9055179f7ce56ceadf3"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k12.tsv",
+      "sha256": "9e5cc5127199c0340c5deaeb6d92cf604453e2dd9b61ff33842d90a7403d0ec8"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k13.tsv",
+      "sha256": "7896e105dba1cfbba0ca8fc541b61ce5178902628e21734856fd3d9d65b7bb19"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k14.tsv",
+      "sha256": "97bd3f7eb22c87ccf781e18d6ea17cb06504e7fcbb8344fb3b9ddf01eb4bbdc2"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k15.tsv",
+      "sha256": "93b3698a46ec6ff6b919bdbfc4c27e6c61ead5ef20078cde1eddbb61b1defe59"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k16.tsv",
+      "sha256": "f1472c096e73475dc329fa122952b17e0f9b17e106782e14fe8bcb844ba808fe"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k17.tsv",
+      "sha256": "bafcae9a0e1e7a1441495fc60da2866d5b4eadcc6bc41b25796243eb2f1796fb"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k18.tsv",
+      "sha256": "c6bcbb743dd586e238c6146c89b46bb4452ea97bce10d2c06980d0af4b8da504"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k19.tsv",
+      "sha256": "031480c2feda785475a941533d82edb637affb6bea1375a497cf39ac27a788e9"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k20.tsv",
+      "sha256": "792a879e095b19ec0dfde52c766f966224bea1c5db947d927573684ade908d4e"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k21.tsv",
+      "sha256": "fb4738862cbcc183556d62b7a89940f126e3248737ac5ff96f507d741651e076"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k22.tsv",
+      "sha256": "a0372107dfc6f50ddfb642277e4e926d398847f901adbf107a714b6890c70fe4"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k23.tsv",
+      "sha256": "59cb3319e558890b584f8434f3ddd2cb51ce0b70b6408886743acc05ee22c794"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k24.tsv",
+      "sha256": "4de0211379a087e83314b5f4aa044ff5f3da07e47cb94924b8af8a52f4ed9a38"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k25.tsv",
+      "sha256": "9ce1421c49ce75128b6ee30ab81d8d1c4132c16befd2de9ef7367947e6b5beb5"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k26.tsv",
+      "sha256": "01ac63f2a682352bb01816434b9895d6d0455d42947d4fe532063db299e56e9b"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k27.tsv",
+      "sha256": "724edf87ea6cc9ed225c65361b2509850096e366c731fa78d89ce616038185a6"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k28.tsv",
+      "sha256": "6d24c3259f7bdff1fd6ee4ed9cc3b7379c32a979e2d0863a9a1a114fc02d467d"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k29.tsv",
+      "sha256": "0be145f8b765f84863f269917b6bf59bf3ead77112cc9663c399693ede0f2e67"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k30.tsv",
+      "sha256": "5457bc258cef111fe211075491d51ff74a25825a2b727224be47b5292b6183ad"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k31.tsv",
+      "sha256": "2df2759815ce3e26d900a5e3b42593d5a3715055c4c9869f7a39ab931e61975a"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k32.tsv",
+      "sha256": "cbef55e62dad4f16b3864ae57f8a901da0e0f1366391c8caf948d2f2bffbc168"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k33.tsv",
+      "sha256": "8fd7fae1e64120f9af3128810869c4d5b96fc77099d923e3df369ea25e282f46"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k34.tsv",
+      "sha256": "d38f5d01a808ad8739adc979645b529f4a182a4c7bbb7f6e59272c0d4666a3db"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k35.tsv",
+      "sha256": "e5a8789aad2f95399c8277dd934e323275996f106f1a398839b9b0b434558edd"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k36.tsv",
+      "sha256": "a602a5de8c36d00714c482dd232f8af5e2c842e946cac99e9cc61a948a13f1b2"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k37.tsv",
+      "sha256": "23fc9ce0b5c639fae0bd03761cf37c38228f61d4ce35da9db0e4187f3bed9a29"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k38.tsv",
+      "sha256": "99a4008c13fbce90c8ba23b6d392fd0fb785ca119b936a0aef26a6301b15c4d2"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k39.tsv",
+      "sha256": "d5ef47b0e10059c1739cc12738607e96b916c0ce788efd40d333f2d41b8625c5"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k40.tsv",
+      "sha256": "35ed6210578c7a59c002aee629ed1055fb5cf889d77d66c1614e2cc69c61c38e"
+    }
+  ],
+  "provenance": {
+    "source_kind": "distances",
+    "genome_map": {
+      "path": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/full/genome_map.tsv",
+      "sha256": "ea8ce815ff4bf65e45e6921272aeff490b5d2a09deb9be3d358aa4ff7601512c"
+    }
+  }
+}

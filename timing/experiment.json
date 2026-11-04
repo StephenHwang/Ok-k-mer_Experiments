@@ -1,0 +1,3100 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-03T21:05:26.160036+00:00",
+  "repository": "/scratch4/blangme2/sjhwang/ok_k_mer",
+  "source_commit": "b16c28903d8c8c4b19eca1c8cf94a43dffd43103",
+  "source_status": " M README.md\n M src/okkmer/cli.py\n M src/okkmer/search.py\n M tests/test_okkmer.py\n",
+  "snapshot_sha256": {
+    "code_snapshot/working_tree.patch": "ad194cb1f67e8369a3c68621e9d45c663d01cb36a55ec9e17fab52599a463467",
+    "code_snapshot/pyproject.toml": "365da99bec967c138d877032efd62f03512befeb0887124c52616282476e1fca",
+    "code_snapshot/src/okkmer/search.py": "4b98973ddcaa784e13c5fe195dcc45514d67470232587ff04afc0eed986cf93c",
+    "code_snapshot/src/okkmer/cli.py": "5628ea5ba21c39ba98e067310ab306c0a4cbd020af353b93c15b60f67bd5dc10",
+    "code_snapshot/src/okkmer/io.py": "db96b18d9d2e34218b44db1764953f6fe07930d17db3be707035364ec09bf69f",
+    "code_snapshot/src/okkmer/index.py": "f91835af9fbd737041d7ec48b77884057db5f00aa9d764ed73e38796ed0156b1",
+    "code_snapshot/src/okkmer/__init__.py": "42b32394258ba4a37e73a2a7834e251062410e87cd31c01c9c31e1c758ccd199",
+    "code_snapshot/src/okkmer/plotting.py": "570815feac2924b4127919044de8b3fc568c33d0374d0501b826bbe8cbe6c5c4",
+    "code_snapshot/src/okkmer/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "code_snapshot/src/okkmer/scoring.py": "99e589ec5cc2a95ce7b93c8ccc669388294b632797c9d5a2d81e5189ad91e94e"
+  },
+  "executable": "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+  "executable_sha256": "1ae36e091d7ccad3d947047953bc95cf2560e86413648af6e4be8cc64a6b832b",
+  "python": "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/python",
+  "full_compilation": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/no_sketching/20261101/all_datasets_by_k.tsv",
+  "full_compilation_sha256": "488c4606d63b8bbc47d8db8c0828869c31d500633196f4fcf2fcb1449f7e183e",
+  "sketch_experiment": {
+    "binary": "/home/shwang45/bin/dashing2_dbaker_release_2.1.21/validation_release/build/dashing2",
+    "binary_sha256": "fd7d7f0f61b72f74654a6030ab6902296111a9d748981850f87b195bfd55cb7b",
+    "version": "v2.1.21",
+    "algorithm": "full SetSketch",
+    "registers": 4096,
+    "threads": 8,
+    "k_min": 6,
+    "k_max": 40,
+    "datasets": [
+      {
+        "dataset": "caldisericia",
+        "genomes": "49",
+        "successful_k": "35",
+        "expected_k": "35",
+        "total_dashing_wall_seconds": "756.42",
+        "total_dashing_wall_minutes": "12.607",
+        "median_wall_seconds": "24.29",
+        "median_wall_seconds_k13_40": "24.85",
+        "max_wall_seconds": "34.73",
+        "slowest_k": "23",
+        "max_peak_rss_gib": "1.5120277404785156",
+        "peak_memory_k": "35",
+        "median_peak_rss_gib_k13_40": "1.4405345916748047",
+        "nodes": "sr14,sr18,sr24,sr27",
+        "intermediate_directories_remaining": "0",
+        "run_directory": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p",
+        "walltime": "02:00:00"
+      },
+      {
+        "dataset": "cyanobacteriales",
+        "genomes": "585",
+        "successful_k": "35",
+        "expected_k": "35",
+        "total_dashing_wall_seconds": "764893.3099999998",
+        "total_dashing_wall_minutes": "12748.221833333331",
+        "median_wall_seconds": "23082.75",
+        "median_wall_seconds_k13_40": "23646.685",
+        "max_wall_seconds": "50319.63",
+        "slowest_k": "31",
+        "max_peak_rss_gib": "7.394992828369141",
+        "peak_memory_k": "31",
+        "median_peak_rss_gib_k13_40": "6.911319732666016",
+        "nodes": "sr06,sr10,sr12,sr14,sr15,sr16,sr17,sr22,sr29,sr30,sr31,sr32,sr33,sr34,sr46",
+        "intermediate_directories_remaining": "19",
+        "run_directory": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL;/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261029T143915Z_0wDJUL;/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261029T160515Z_oJW9Ye;/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261030T142222Z_7lS7N2",
+        "walltime": "08:00:00"
+      },
+      {
+        "dataset": "anaerolineales",
+        "genomes": "525",
+        "successful_k": "35",
+        "expected_k": "35",
+        "total_dashing_wall_seconds": "118739.05",
+        "total_dashing_wall_minutes": "1978.9841666666666",
+        "median_wall_seconds": "4059.51",
+        "median_wall_seconds_k13_40": "4076.0299999999997",
+        "max_wall_seconds": "5440.6",
+        "slowest_k": "30",
+        "max_peak_rss_gib": "4.345500946044922",
+        "peak_memory_k": "34",
+        "median_peak_rss_gib_k13_40": "4.267248153686523",
+        "nodes": "sr07,sr08,sr09,sr10,sr12,sr13,sr15,sr16,sr17,sr20,sr21,sr22,sr23,sr25,sr26,sr29,sr35,sr36,sr37,sr39,sr40",
+        "intermediate_directories_remaining": "0",
+        "run_directory": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf",
+        "walltime": "08:00:00"
+      },
+      {
+        "dataset": "aquificota",
+        "genomes": "132",
+        "successful_k": "35",
+        "expected_k": "35",
+        "total_dashing_wall_seconds": "3509.419999999999",
+        "total_dashing_wall_minutes": "58.49033333333332",
+        "median_wall_seconds": "114.71",
+        "median_wall_seconds_k13_40": "118.14",
+        "max_wall_seconds": "131.92",
+        "slowest_k": "15",
+        "max_peak_rss_gib": "1.5239181518554688",
+        "peak_memory_k": "25",
+        "median_peak_rss_gib_k13_40": "1.467355728149414",
+        "nodes": "sr07,sr08,sr10,sr13,sr14,sr18,sr19,sr20,sr21,sr22,sr23,sr37",
+        "intermediate_directories_remaining": "0",
+        "run_directory": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz",
+        "walltime": "02:00:00"
+      },
+      {
+        "dataset": "bacillales",
+        "genomes": "249",
+        "successful_k": "35",
+        "expected_k": "35",
+        "total_dashing_wall_seconds": "28966.690000000006",
+        "total_dashing_wall_minutes": "482.7781666666668",
+        "median_wall_seconds": "975.85",
+        "median_wall_seconds_k13_40": "981.5450000000001",
+        "max_wall_seconds": "1239.83",
+        "slowest_k": "21",
+        "max_peak_rss_gib": "3.8193092346191406",
+        "peak_memory_k": "32",
+        "median_peak_rss_gib_k13_40": "3.487070083618164",
+        "nodes": "sr06,sr07,sr09,sr10,sr12,sr13,sr14,sr18,sr20,sr21,sr27,sr29",
+        "intermediate_directories_remaining": "0",
+        "run_directory": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t",
+        "walltime": "04:00:00"
+      },
+      {
+        "dataset": "chlamydiales",
+        "genomes": "288",
+        "successful_k": "35",
+        "expected_k": "35",
+        "total_dashing_wall_seconds": "18076.210000000003",
+        "total_dashing_wall_minutes": "301.27016666666674",
+        "median_wall_seconds": "590.03",
+        "median_wall_seconds_k13_40": "594.96",
+        "max_wall_seconds": "713.2",
+        "slowest_k": "24",
+        "max_peak_rss_gib": "2.3475799560546875",
+        "peak_memory_k": "35",
+        "median_peak_rss_gib_k13_40": "2.244678497314453",
+        "nodes": "sr06,sr07,sr08,sr09,sr10,sr13,sr14,sr16,sr18,sr19,sr20,sr21,sr22,sr24,sr25,sr31,sr35",
+        "intermediate_directories_remaining": "0",
+        "run_directory": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ",
+        "walltime": "04:00:00"
+      },
+      {
+        "dataset": "dethiobacteria",
+        "genomes": "102",
+        "successful_k": "35",
+        "expected_k": "35",
+        "total_dashing_wall_seconds": "3222.150000000001",
+        "total_dashing_wall_minutes": "53.702500000000015",
+        "median_wall_seconds": "106.94",
+        "median_wall_seconds_k13_40": "108.19",
+        "max_wall_seconds": "120.39",
+        "slowest_k": "16",
+        "max_peak_rss_gib": "2.1375198364257812",
+        "peak_memory_k": "26",
+        "median_peak_rss_gib_k13_40": "2.0589866638183594",
+        "nodes": "sr06,sr07,sr10,sr13,sr14,sr19,sr35,sr39",
+        "intermediate_directories_remaining": "0",
+        "run_directory": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg",
+        "walltime": "02:00:00"
+      },
+      {
+        "dataset": "neisseriaceae",
+        "genomes": "147",
+        "successful_k": "35",
+        "expected_k": "35",
+        "total_dashing_wall_seconds": "6377.849999999999",
+        "total_dashing_wall_minutes": "106.29749999999999",
+        "median_wall_seconds": "219.6",
+        "median_wall_seconds_k13_40": "222.70999999999998",
+        "max_wall_seconds": "253.84",
+        "slowest_k": "33",
+        "max_peak_rss_gib": "2.0194053649902344",
+        "peak_memory_k": "22",
+        "median_peak_rss_gib_k13_40": "1.9471549987792969",
+        "nodes": "sr07,sr10,sr11,sr13,sr14,sr15,sr16,sr18,sr19,sr20,sr21,sr24",
+        "intermediate_directories_remaining": "0",
+        "run_directory": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M",
+        "walltime": "02:00:00"
+      }
+    ]
+  },
+  "sketch_compilation": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/compiled_20261103T162637Z_yonifc7k/all_datasets_by_k.tsv",
+  "sketch_compilation_sha256": "4bc4033ce2c4fb219c7c92053d6503e18cbc97acad70053b94b5a2121d42eef4",
+  "early_stopping": false,
+  "k_low": 6,
+  "k_high": 40,
+  "max_kmers": 3,
+  "w_step": 0.05,
+  "threads": 8,
+  "repetitions": 1,
+  "inputs": [
+    {
+      "input_id": 0,
+      "dataset": "Aquificota",
+      "folder": "aquificota",
+      "distance_type": "full",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/full/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/full/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/p__Aquificota.nwk",
+      "tree_sha256": "46d8f1caa9e2f5d38a96f7470666e8a5b1307120bb145ebd2decedcd34e8b1a0",
+      "n_genomes": 132,
+      "n_matrix_genomes": 132,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Aquificota/full",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/genomes_timing_test/distances/run_20261028T003355Z_rgL9gz/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 1,
+      "dataset": "Aquificota",
+      "folder": "aquificota",
+      "distance_type": "sketch",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/sketch/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/sketch/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/aquificota/p__Aquificota.nwk",
+      "tree_sha256": "46d8f1caa9e2f5d38a96f7470666e8a5b1307120bb145ebd2decedcd34e8b1a0",
+      "n_genomes": 132,
+      "n_matrix_genomes": 132,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Aquificota/sketch",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/aquificota/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Aquificota/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 2,
+      "dataset": "Bacillales_A",
+      "folder": "bacillales",
+      "distance_type": "full",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Bacillales_A/full/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Bacillales_A/full/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Bacillales_A/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/o__Bacillales_A.nwk",
+      "tree_sha256": "e7fdf972229b5d018f8f2899e569d3d600e0abafb177964f591d5702fdb26c5c",
+      "n_genomes": 249,
+      "n_matrix_genomes": 249,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/full",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/genomes_timing_test/distances/run_20261028T003358Z_LD8i7t/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Bacillales_A/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 3,
+      "dataset": "Bacillales_A",
+      "folder": "bacillales",
+      "distance_type": "sketch",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Bacillales_A/sketch/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Bacillales_A/sketch/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Bacillales_A/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/bacillales/o__Bacillales_A.nwk",
+      "tree_sha256": "e7fdf972229b5d018f8f2899e569d3d600e0abafb177964f591d5702fdb26c5c",
+      "n_genomes": 249,
+      "n_matrix_genomes": 249,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Bacillales_A/sketch",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/bacillales/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Bacillales_A/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 4,
+      "dataset": "Caldisericia",
+      "folder": "caldisericia",
+      "distance_type": "full",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/full/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/full/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/c__Caldisericia.nwk",
+      "tree_sha256": "a8c3fbb952ceea2e73b65a45d515c8ca12f3e5ff49dcee352347dce1b68557c7",
+      "n_genomes": 49,
+      "n_matrix_genomes": 49,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Caldisericia/full",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 5,
+      "dataset": "Caldisericia",
+      "folder": "caldisericia",
+      "distance_type": "sketch",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/sketch/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/sketch/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/c__Caldisericia.nwk",
+      "tree_sha256": "a8c3fbb952ceea2e73b65a45d515c8ca12f3e5ff49dcee352347dce1b68557c7",
+      "n_genomes": 49,
+      "n_matrix_genomes": 49,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Caldisericia/sketch",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/caldisericia/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 6,
+      "dataset": "Chlamydiales",
+      "folder": "chlamydiales",
+      "distance_type": "full",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/full/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/full/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/o__Chlamydiales.nwk",
+      "tree_sha256": "c0153c8a8ca92c407dac67df1a1ee953d3d5455373b2b8224514d5fabbc22cae",
+      "n_genomes": 288,
+      "n_matrix_genomes": 288,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/full",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/genomes_timing_test/distances/run_20261028T003408Z_3tnPJQ/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 7,
+      "dataset": "Chlamydiales",
+      "folder": "chlamydiales",
+      "distance_type": "sketch",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/sketch/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/sketch/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/chlamydiales/o__Chlamydiales.nwk",
+      "tree_sha256": "c0153c8a8ca92c407dac67df1a1ee953d3d5455373b2b8224514d5fabbc22cae",
+      "n_genomes": 288,
+      "n_matrix_genomes": 288,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Chlamydiales/sketch",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/chlamydiales/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Chlamydiales/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 8,
+      "dataset": "Cyanobacteriales",
+      "folder": "cyanobacteriales",
+      "distance_type": "full",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Cyanobacteriales/full/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Cyanobacteriales/full/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Cyanobacteriales/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/o__Cyanobacteriales.nwk",
+      "tree_sha256": "ada722f0ceaccd2432d32486504cfe5e7264fc44c6e2af3217f724c199fdcf36",
+      "n_genomes": 585,
+      "n_matrix_genomes": 585,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Cyanobacteriales/full",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261029T160515Z_oJW9Ye/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261030T142222Z_7lS7N2/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261030T142222Z_7lS7N2/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261029T143915Z_0wDJUL/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261030T142222Z_7lS7N2/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261030T142222Z_7lS7N2/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261028T182607Z_HpLNIL/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261030T142222Z_7lS7N2/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261030T142222Z_7lS7N2/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/genomes_timing_test/distances/run_20261030T142222Z_7lS7N2/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Cyanobacteriales/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 9,
+      "dataset": "Cyanobacteriales",
+      "folder": "cyanobacteriales",
+      "distance_type": "sketch",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Cyanobacteriales/sketch/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Cyanobacteriales/sketch/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Cyanobacteriales/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/cyanobacteriales/o__Cyanobacteriales.nwk",
+      "tree_sha256": "ada722f0ceaccd2432d32486504cfe5e7264fc44c6e2af3217f724c199fdcf36",
+      "n_genomes": 585,
+      "n_matrix_genomes": 585,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Cyanobacteriales/sketch",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/cyanobacteriales/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Cyanobacteriales/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 10,
+      "dataset": "Neisseriaceae",
+      "folder": "neisseriaceae",
+      "distance_type": "full",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/full/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/full/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/f__Neisseriaceae.nwk",
+      "tree_sha256": "08df5135e22bc2774f623b6b79aa41d374ce7ca22eabc2f3990b03975df8c27c",
+      "n_genomes": 145,
+      "n_matrix_genomes": 147,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/full",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/genomes_timing_test/distances/run_20261028T003415Z_36RM4M/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/excluded_genomes.txt",
+      "excluded_ids": [
+        "GCA_017991555.1",
+        "GCA_030146515.1"
+      ]
+    },
+    {
+      "input_id": 11,
+      "dataset": "Neisseriaceae",
+      "folder": "neisseriaceae",
+      "distance_type": "sketch",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/sketch/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/sketch/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/neisseriaceae/f__Neisseriaceae.nwk",
+      "tree_sha256": "08df5135e22bc2774f623b6b79aa41d374ce7ca22eabc2f3990b03975df8c27c",
+      "n_genomes": 145,
+      "n_matrix_genomes": 147,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/sketch",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/neisseriaceae/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/excluded_genomes.txt",
+      "excluded_ids": [
+        "GCA_017991555.1",
+        "GCA_030146515.1"
+      ]
+    },
+    {
+      "input_id": 12,
+      "dataset": "Anaerolineales",
+      "folder": "anaerolineales",
+      "distance_type": "full",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/full/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/full/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/o__Anaerolineales.nwk",
+      "tree_sha256": "0e83ed279501fa82ec56656437331e229ee5b0954a0ae8c9970e2ca3d725d19a",
+      "n_genomes": 525,
+      "n_matrix_genomes": 525,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/full",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/genomes_timing_test/distances/run_20261027T232554Z_h128Lf/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 13,
+      "dataset": "Anaerolineales",
+      "folder": "anaerolineales",
+      "distance_type": "sketch",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/sketch/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/sketch/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/anaerolineales/o__Anaerolineales.nwk",
+      "tree_sha256": "0e83ed279501fa82ec56656437331e229ee5b0954a0ae8c9970e2ca3d725d19a",
+      "n_genomes": 525,
+      "n_matrix_genomes": 525,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/sketch",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/anaerolineales/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/excluded_genomes.txt",
+      "excluded_ids": []
+    },
+    {
+      "input_id": 14,
+      "dataset": "Dethiobacteria",
+      "folder": "dethiobacteria",
+      "distance_type": "full",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/full/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/full/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/c__Dethiobacteria.nwk",
+      "tree_sha256": "49dc19e30db04c420c9eb98197d820252063a65c340c1f30d8a3f512a70538f4",
+      "n_genomes": 102,
+      "n_matrix_genomes": 102,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Dethiobacteria/full",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/genomes_timing_test/distances/run_20261027T232607Z_2oE3Jg/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/excluded_genomes.txt",
+      "excluded_ids": [
+        "GCF_000174415.1",
+        "GCF_022558445.1"
+      ]
+    },
+    {
+      "input_id": 15,
+      "dataset": "Dethiobacteria",
+      "folder": "dethiobacteria",
+      "distance_type": "sketch",
+      "matrices": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/sketch/matrices",
+      "genome_map": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/sketch/genome_map.tsv",
+      "tree": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/reference.nwk",
+      "original_tree": "/vast/blangme2/sjhwang/ok_k_mer_data/dethiobacteria/c__Dethiobacteria.nwk",
+      "tree_sha256": "49dc19e30db04c420c9eb98197d820252063a65c340c1f30d8a3f512a70538f4",
+      "n_genomes": 102,
+      "n_matrix_genomes": 102,
+      "index": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Dethiobacteria/sketch",
+      "sources": [
+        {
+          "k": 6,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k6.tsv"
+        },
+        {
+          "k": 7,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k7.tsv"
+        },
+        {
+          "k": 8,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k8.tsv"
+        },
+        {
+          "k": 9,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k9.tsv"
+        },
+        {
+          "k": 10,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k10.tsv"
+        },
+        {
+          "k": 11,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k11.tsv"
+        },
+        {
+          "k": 12,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k12.tsv"
+        },
+        {
+          "k": 13,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k13.tsv"
+        },
+        {
+          "k": 14,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k14.tsv"
+        },
+        {
+          "k": 15,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k15.tsv"
+        },
+        {
+          "k": 16,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k16.tsv"
+        },
+        {
+          "k": 17,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k17.tsv"
+        },
+        {
+          "k": 18,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k18.tsv"
+        },
+        {
+          "k": 19,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k19.tsv"
+        },
+        {
+          "k": 20,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k20.tsv"
+        },
+        {
+          "k": 21,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k21.tsv"
+        },
+        {
+          "k": 22,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k22.tsv"
+        },
+        {
+          "k": 23,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k23.tsv"
+        },
+        {
+          "k": 24,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k24.tsv"
+        },
+        {
+          "k": 25,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k25.tsv"
+        },
+        {
+          "k": 26,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k26.tsv"
+        },
+        {
+          "k": 27,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k27.tsv"
+        },
+        {
+          "k": 28,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k28.tsv"
+        },
+        {
+          "k": 29,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k29.tsv"
+        },
+        {
+          "k": 30,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k30.tsv"
+        },
+        {
+          "k": 31,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k31.tsv"
+        },
+        {
+          "k": 32,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k32.tsv"
+        },
+        {
+          "k": 33,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k33.tsv"
+        },
+        {
+          "k": 34,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k34.tsv"
+        },
+        {
+          "k": 35,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k35.tsv"
+        },
+        {
+          "k": 36,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k36.tsv"
+        },
+        {
+          "k": 37,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k37.tsv"
+        },
+        {
+          "k": 38,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k38.tsv"
+        },
+        {
+          "k": 39,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k39.tsv"
+        },
+        {
+          "k": 40,
+          "path": "/vast/blangme2/sjhwang/ok_k_mer_data/dashing_timing/with_sketching/run_20261103T153050Z_tvb1_8j9/dethiobacteria/jaccard_k40.tsv"
+        }
+      ],
+      "exclude_genomes": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Dethiobacteria/excluded_genomes.txt",
+      "excluded_ids": [
+        "GCF_000174415.1",
+        "GCF_022558445.1"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": 0,
+      "input_id": 0,
+      "dataset": "Aquificota",
+      "distance_type": "full",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 132,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/00_Aquificota_full_local"
+    },
+    {
+      "task_id": 1,
+      "input_id": 0,
+      "dataset": "Aquificota",
+      "distance_type": "full",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 132,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/01_Aquificota_full_global"
+    },
+    {
+      "task_id": 2,
+      "input_id": 1,
+      "dataset": "Aquificota",
+      "distance_type": "sketch",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 132,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/02_Aquificota_sketch_local"
+    },
+    {
+      "task_id": 3,
+      "input_id": 1,
+      "dataset": "Aquificota",
+      "distance_type": "sketch",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 132,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/03_Aquificota_sketch_global"
+    },
+    {
+      "task_id": 4,
+      "input_id": 2,
+      "dataset": "Bacillales_A",
+      "distance_type": "full",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 249,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/04_Bacillales_A_full_local"
+    },
+    {
+      "task_id": 5,
+      "input_id": 2,
+      "dataset": "Bacillales_A",
+      "distance_type": "full",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 249,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/05_Bacillales_A_full_global"
+    },
+    {
+      "task_id": 6,
+      "input_id": 3,
+      "dataset": "Bacillales_A",
+      "distance_type": "sketch",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 249,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/06_Bacillales_A_sketch_local"
+    },
+    {
+      "task_id": 7,
+      "input_id": 3,
+      "dataset": "Bacillales_A",
+      "distance_type": "sketch",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 249,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/07_Bacillales_A_sketch_global"
+    },
+    {
+      "task_id": 8,
+      "input_id": 4,
+      "dataset": "Caldisericia",
+      "distance_type": "full",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 49,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/08_Caldisericia_full_local"
+    },
+    {
+      "task_id": 9,
+      "input_id": 4,
+      "dataset": "Caldisericia",
+      "distance_type": "full",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 49,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/09_Caldisericia_full_global"
+    },
+    {
+      "task_id": 10,
+      "input_id": 5,
+      "dataset": "Caldisericia",
+      "distance_type": "sketch",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 49,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/10_Caldisericia_sketch_local"
+    },
+    {
+      "task_id": 11,
+      "input_id": 5,
+      "dataset": "Caldisericia",
+      "distance_type": "sketch",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 49,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/11_Caldisericia_sketch_global"
+    },
+    {
+      "task_id": 12,
+      "input_id": 6,
+      "dataset": "Chlamydiales",
+      "distance_type": "full",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 288,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/12_Chlamydiales_full_local"
+    },
+    {
+      "task_id": 13,
+      "input_id": 6,
+      "dataset": "Chlamydiales",
+      "distance_type": "full",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 288,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/13_Chlamydiales_full_global"
+    },
+    {
+      "task_id": 14,
+      "input_id": 7,
+      "dataset": "Chlamydiales",
+      "distance_type": "sketch",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 288,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/14_Chlamydiales_sketch_local"
+    },
+    {
+      "task_id": 15,
+      "input_id": 7,
+      "dataset": "Chlamydiales",
+      "distance_type": "sketch",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 288,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/15_Chlamydiales_sketch_global"
+    },
+    {
+      "task_id": 16,
+      "input_id": 8,
+      "dataset": "Cyanobacteriales",
+      "distance_type": "full",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 585,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/16_Cyanobacteriales_full_local"
+    },
+    {
+      "task_id": 17,
+      "input_id": 8,
+      "dataset": "Cyanobacteriales",
+      "distance_type": "full",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 585,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/17_Cyanobacteriales_full_global"
+    },
+    {
+      "task_id": 18,
+      "input_id": 9,
+      "dataset": "Cyanobacteriales",
+      "distance_type": "sketch",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 585,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/18_Cyanobacteriales_sketch_local"
+    },
+    {
+      "task_id": 19,
+      "input_id": 9,
+      "dataset": "Cyanobacteriales",
+      "distance_type": "sketch",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 585,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/19_Cyanobacteriales_sketch_global"
+    },
+    {
+      "task_id": 20,
+      "input_id": 10,
+      "dataset": "Neisseriaceae",
+      "distance_type": "full",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 145,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/20_Neisseriaceae_full_local"
+    },
+    {
+      "task_id": 21,
+      "input_id": 10,
+      "dataset": "Neisseriaceae",
+      "distance_type": "full",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 145,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/21_Neisseriaceae_full_global"
+    },
+    {
+      "task_id": 22,
+      "input_id": 11,
+      "dataset": "Neisseriaceae",
+      "distance_type": "sketch",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 145,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/22_Neisseriaceae_sketch_local"
+    },
+    {
+      "task_id": 23,
+      "input_id": 11,
+      "dataset": "Neisseriaceae",
+      "distance_type": "sketch",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 145,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/23_Neisseriaceae_sketch_global"
+    },
+    {
+      "task_id": 24,
+      "input_id": 12,
+      "dataset": "Anaerolineales",
+      "distance_type": "full",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 525,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/24_Anaerolineales_full_local"
+    },
+    {
+      "task_id": 25,
+      "input_id": 12,
+      "dataset": "Anaerolineales",
+      "distance_type": "full",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 525,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/25_Anaerolineales_full_global"
+    },
+    {
+      "task_id": 26,
+      "input_id": 13,
+      "dataset": "Anaerolineales",
+      "distance_type": "sketch",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 525,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/26_Anaerolineales_sketch_local"
+    },
+    {
+      "task_id": 27,
+      "input_id": 13,
+      "dataset": "Anaerolineales",
+      "distance_type": "sketch",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 525,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/27_Anaerolineales_sketch_global"
+    },
+    {
+      "task_id": 28,
+      "input_id": 14,
+      "dataset": "Dethiobacteria",
+      "distance_type": "full",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 102,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/28_Dethiobacteria_full_local"
+    },
+    {
+      "task_id": 29,
+      "input_id": 14,
+      "dataset": "Dethiobacteria",
+      "distance_type": "full",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 102,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/29_Dethiobacteria_full_global"
+    },
+    {
+      "task_id": 30,
+      "input_id": 15,
+      "dataset": "Dethiobacteria",
+      "distance_type": "sketch",
+      "mode": "local",
+      "delta_k": 3,
+      "n_genomes": 102,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/30_Dethiobacteria_sketch_local"
+    },
+    {
+      "task_id": 31,
+      "input_id": 15,
+      "dataset": "Dethiobacteria",
+      "distance_type": "sketch",
+      "mode": "global",
+      "delta_k": null,
+      "n_genomes": 102,
+      "threads": 8,
+      "output": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/runs/31_Dethiobacteria_sketch_global"
+    }
+  ],
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ete3": "3.1.3",
+    "matplotlib": "3.8.4"
+  }
+}

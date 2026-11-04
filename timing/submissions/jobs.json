@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-11-03T21:08:18.580881+00:00",
+  "jobs": {
+    "prepare": "32858927",
+    "search": "32858928",
+    "collect": "32858929"
+  },
+  "commands": [
+    [
+      "sbatch",
+      "--parsable",
+      "--output=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/logs/prepare_%A_%a.out",
+      "--error=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/logs/prepare_%A_%a.err",
+      "--array=0-15%4",
+      "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/prepare.sh"
+    ],
+    [
+      "sbatch",
+      "--parsable",
+      "--output=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/logs/search_%A_%a.out",
+      "--error=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/logs/search_%A_%a.err",
+      "--array=0-31%8",
+      "--dependency=afterok:32858927",
+      "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/search.sh"
+    ],
+    [
+      "sbatch",
+      "--parsable",
+      "--output=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/logs/collect_%A_%a.out",
+      "--error=/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/logs/collect_%A_%a.err",
+      "--dependency=afterany:32858928",
+      "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/collect.sh"
+    ]
+  ],
+  "responses": [
+    {
+      "name": "prepare",
+      "stdout": "32858927\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "name": "search",
+      "stdout": "32858928\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "name": "collect",
+      "stdout": "32858929\n",
+      "stderr": "",
+      "returncode": 0
+    }
+  ]
+}

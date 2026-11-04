@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "okkmer_version": "0.1.0",
+  "created_utc": "2026-11-03T21:08:44.739899+00:00",
+  "metric": "jaccard_distance",
+  "genomes": [
+    "GCA_001871575.1",
+    "GCA_002299965.1",
+    "GCA_002402295.1",
+    "GCA_002403335.1",
+    "GCA_002877955.1",
+    "GCA_003566815.1",
+    "GCA_003648245.1",
+    "GCA_003650285.1",
+    "GCA_012517755.1",
+    "GCA_012517765.1",
+    "GCA_013824685.1",
+    "GCA_015485995.1",
+    "GCA_015489815.1",
+    "GCA_017992555.1",
+    "GCA_017999835.1",
+    "GCA_018054005.1",
+    "GCA_020692945.1",
+    "GCA_020722505.1",
+    "GCA_021158845.1",
+    "GCA_021161495.1",
+    "GCA_021372585.1",
+    "GCA_021373025.1",
+    "GCA_022707885.1",
+    "GCA_022710025.1",
+    "GCA_022759145.1",
+    "GCA_023146045.1",
+    "GCA_026390155.1",
+    "GCA_026390195.1",
+    "GCA_026390215.1",
+    "GCA_026390245.1",
+    "GCA_026390285.1",
+    "GCA_026414995.1",
+    "GCA_026987225.1",
+    "GCA_027023025.1",
+    "GCA_028700655.1",
+    "GCA_028708485.1",
+    "GCA_029548865.1",
+    "GCA_029553255.1",
+    "GCA_030018355.1",
+    "GCA_030621215.1",
+    "GCA_030642335.1",
+    "GCA_030652945.1",
+    "GCA_903871855.1",
+    "GCA_913055585.1",
+    "GCF_000284335.1",
+    "GCF_003570925.1",
+    "GCF_003570935.1",
+    "GCF_003570985.1",
+    "GCF_003570995.1"
+  ],
+  "ks": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "pair_order": "upper_triangle_row_major",
+  "n_pairs": 1176,
+  "distances_sha256": "f82b088384eeadac2ecce20a85d43643c7fb3751e1c2f150b146e9ac308dc89b",
+  "input_kind": "distance",
+  "sources": [
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k6.tsv",
+      "sha256": "c4cd656ee39cbea04eab781be32ef7a543c59a1d0c307a0199864db3a4fcf06c"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k7.tsv",
+      "sha256": "0c7fec79955deebb03294bf3b45bc71a0a7c9dab60a92cafc528eeb0cf5fb0fc"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k8.tsv",
+      "sha256": "0b2e386e267f8ca23c049d3a7006f82fb836cf31c534ca4635971d481fe38556"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k9.tsv",
+      "sha256": "e08022c61a9b81d79644c72bf8c9449b9bca7b2746c4a905c1302ccdb05f0621"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k10.tsv",
+      "sha256": "3f055cfd572efb22f18f0d4a0cb1ff1b3c770b3c4110ae97e1c52d11977f0ec0"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k11.tsv",
+      "sha256": "706de3dc71ded377d4e5215fc1353b58d9559e8bb90e21a216845430b03ed8b9"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k12.tsv",
+      "sha256": "c7deb6743db6b586d97f54c858d2e6210aca15c2b4875d1b7dc3327570e67cba"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k13.tsv",
+      "sha256": "bf59fa2bc528d5d8f86ba2827de4d0fe2102778110c11eac69641d56295662f8"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k14.tsv",
+      "sha256": "1b7e6293d564db0918c6537758d8d466a05db56f8637c44b6bbb8e2fec7bd34f"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k15.tsv",
+      "sha256": "fdbe39bce091829322a4b09c0cb44f8cead426f41b09212cf5b57e9f1d6789c2"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k16.tsv",
+      "sha256": "840f640e888b8890c9afc5ddf56c117aca66d819e56f322baf18c702cc48a220"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k17.tsv",
+      "sha256": "6fc79df689511a5b62c5f285a102a4168fc59a8f6d70474a0bd86f88a6f76b53"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k18.tsv",
+      "sha256": "ef0b610dd30060879556daa772facecc59e14e3f87c9962c3e59b5fe66db2f39"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k19.tsv",
+      "sha256": "fcd0eb8a8dad2a70cd147837ced0350fedf58935f8ea31366938d1a22c424cfa"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k20.tsv",
+      "sha256": "ec674a303b0fea8787368e2606d19cf001940074a5de812948cf66699cbbc3c4"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k21.tsv",
+      "sha256": "bae4293227412081112d40185d8abef4e2d341a13d45c3669ec7a1042a72a091"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k22.tsv",
+      "sha256": "3725f29ea0f2a4ce52cd596a7ada44b705f71411b687e0ea930ae7cdf9d63abc"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k23.tsv",
+      "sha256": "2acb33b249bd915ea42492ab5564f7ebf8125654cd6632f4392305fce97df886"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k24.tsv",
+      "sha256": "ad42644229b75272de9f9f1eb2c19f59751a082ca099ff220bc5bdb0a26ddb05"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k25.tsv",
+      "sha256": "44bae7a17efe85da8d0863bd706f58bc62eb7ce57c925c2528cab2802e39336d"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k26.tsv",
+      "sha256": "e580f46024f9f1a8222ec3fe4787c36b6cc59383b5249baa0fbc5454dbdd2816"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k27.tsv",
+      "sha256": "f414147377fc06a83d9eed855fd71b4c950ccc42ff25f63b07d8763ae1040c06"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k28.tsv",
+      "sha256": "e042bf4aa6c04fedb1a2722059745ce8ee90ec93bbd308f24eb07179095541cb"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k29.tsv",
+      "sha256": "186ddc57022dcebdd54b5c0352fd891bfb6924cbcefb461f8743815f0104832c"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k30.tsv",
+      "sha256": "54855cd1f805a372f7cedf7dd0dacf57dc5968b44c032c3d968bec49fda2272e"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k31.tsv",
+      "sha256": "7d517ed67f562b11666d0baa88bce341abb402dd54fe18f816ea3c4581f87518"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k32.tsv",
+      "sha256": "09d7d8d23b6d073c5131545d2c5bf1b1a1bef4605ee63a19ec155bddfe161285"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k33.tsv",
+      "sha256": "9526a6e5427da8325a1a3e6072924929f3026a4e6554eb525349d59417e397e0"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k34.tsv",
+      "sha256": "7ae1b565e1476e5bb165a577da754f8b6421193e075acf3d25c442cca6d6e1ce"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k35.tsv",
+      "sha256": "f73e2d1c888998174bbad8507450f7d778f1ec86ffc382ebe05fe66fc3760abe"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k36.tsv",
+      "sha256": "6a092bacbc8846127d05cfd9ab2b90f431148a20a1db183abe5da20f45271e49"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k37.tsv",
+      "sha256": "0e0cc478dd1ccfc50eeb0e94abc62bc42997619508ebad0b20f9b855ac9b75f4"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k38.tsv",
+      "sha256": "7a9236eb7fd963c1cb37f1e85f5504fb3b64733d7f9ab58461596397960e09b7"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k39.tsv",
+      "sha256": "8615107f6ae95ce7fb505007b0b5a114b291c52a718d01911d08130e65474d6c"
+    },
+    {
+      "path": "/vast/blangme2/sjhwang/ok_k_mer_data/caldisericia/genomes_timing_test/distances/run_20261027T223238Z_myTu9p/jaccard_k40.tsv",
+      "sha256": "ff68b03b4ced14c529888391e2bac1fbaecbdca671dcb9c4180a0eeaba38052b"
+    }
+  ],
+  "provenance": {
+    "source_kind": "distances",
+    "genome_map": {
+      "path": "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Caldisericia/full/genome_map.tsv",
+      "sha256": "b2ebdfcedfcb0b9dc7588ee5e9abd918705f40d079968c7efd9ab0338263609a"
+    }
+  }
+}

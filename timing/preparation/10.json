@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-11-03T21:08:50.338026+00:00",
+  "command": [
+    "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+    "index",
+    "--distances",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/full/matrices",
+    "--input-kind",
+    "distance",
+    "--genome-map",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Neisseriaceae/full/genome_map.tsv",
+    "--k-low",
+    "6",
+    "--k-high",
+    "40",
+    "--output",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Neisseriaceae/full"
+  ],
+  "slurm_job_id": "32858967",
+  "finished_utc": "2026-11-03T21:08:51.211448+00:00",
+  "returncode": 0
+}

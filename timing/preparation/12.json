@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-11-03T21:09:10.337774+00:00",
+  "command": [
+    "/scratch4/blangme2/sjhwang/ok_k_mer/.venv/bin/okkmer",
+    "index",
+    "--distances",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/full/matrices",
+    "--input-kind",
+    "distance",
+    "--genome-map",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/inputs/Anaerolineales/full/genome_map.tsv",
+    "--k-low",
+    "6",
+    "--k-high",
+    "40",
+    "--output",
+    "/scratch4/blangme2/sjhwang/ok_k_mer_experiments/timing/indices/Anaerolineales/full"
+  ],
+  "slurm_job_id": "32858971",
+  "finished_utc": "2026-11-03T21:09:16.997976+00:00",
+  "returncode": 0
+}
