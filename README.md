@@ -72,3 +72,9 @@ Exploratory files previously ignored under `src/old_exploration` remain local.
 
 No workflow modifies the manuscript directory. This repository has no GitHub
 remote until one is explicitly configured.
+
+## License
+
+The experiment code is licensed under the GNU General Public License version 3
+(`GPL-3.0-only`). See [LICENSE](LICENSE) for the full terms.
+Third-party components and data retain their respective licenses.
