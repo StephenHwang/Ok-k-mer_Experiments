@@ -85,6 +85,45 @@ def prepare(out):
         stability.write_csv(directory / 'tasks.csv', selected)
     (out / 'input_provenance.json').write_text(json.dumps(provenance, indent=2))
 
+def plot_spearman_readable(out, combined, labels):
+    """Readable at manuscript width, with a two-column legend and large points."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    fig, ax = plt.subplots(figsize=(8.2, 6.4))
+    fig.subplots_adjust(left=.13, right=.98, bottom=.13, top=.70)
+    for name, group in combined[combined.masking_percentage <= 60].groupby('dataset', sort=False):
+        stats = group.groupby('masking_percentage')['rho'].agg(['mean', 'std'])
+        x = stats.index.to_numpy()
+        y = stats['mean'].to_numpy()
+        sd = stats['std'].fillna(0).to_numpy()
+        line, = ax.plot(x, y, marker='o', markersize=8.5, linewidth=2.2,
+                        markeredgecolor='white', markeredgewidth=.65, label=labels[name])
+        ax.fill_between(x, y-sd, y+sd, color=line.get_color(), alpha=.12, linewidth=0)
+    ax.set_ylim(.45, 1.)
+    ax.set_yticks([.5,.6,.7,.8,.9,1.])
+    ax.set_xticks(range(0,61,10), [f'{x}%' for x in range(0,61,10)])
+    ax.set_xlabel('Genomes masked (%)', fontsize=14.58, labelpad=10)
+    ax.set_ylabel(r'Spearman correlation, $\rho$', fontsize=14.58, labelpad=10)
+    ax.tick_params(axis='both', direction='in', labelsize=12.96, length=6, width=1.1, pad=6)
+    for side in ('top','right'):
+        ax.spines[side].set_visible(False)
+    for side in ('left','bottom'):
+        ax.spines[side].set_linewidth(1.1)
+    handles, texts = ax.get_legend_handles_labels()
+    by_label = dict(zip(texts, handles))
+    ordered = [label for label in labels.values() if label in by_label]
+    # Fill rows in the established dataset order; Matplotlib fills columns first.
+    legend_order = ordered[::2] + ordered[1::2]
+    ax.legend([by_label[label] for label in legend_order], legend_order,
+              ncol=2, loc='lower center', bbox_to_anchor=(.5,1.04), frameon=False,
+              fontsize=12.15, handlelength=1.5, handletextpad=.5, columnspacing=1.0,
+              labelspacing=.45, borderaxespad=0)
+    for extension in ('pdf','png'):
+        fig.savefig(out/f'fig4_spearman.{extension}',dpi=300,bbox_inches='tight',pad_inches=.12)
+    plt.close(fig)
+
+
 def plot_figures(out, combined=None, only=None):
     if combined is None:
         combined = pd.read_csv(out / "all_eight_simulations.csv")
@@ -104,6 +143,9 @@ def plot_figures(out, combined=None, only=None):
     for column, label, stem in [('rho', r'Spearman correlation, $\rho$', 'fig4_spearman'), ('k_eff', 'Weighted composite k-mer length', 'figA1_weighted_k')]:
         if only is not None and column != only:
             continue
+        if column == 'rho':
+            plot_spearman_readable(out, combined, labels)
+            continue
         fig, ax = plt.subplots(figsize=(9, 6))
         for name, group in combined[combined.masking_percentage <= 60].groupby('dataset', sort=False):
             stats = group.groupby('masking_percentage')[column].agg(['mean', 'std'])
@@ -118,63 +160,17 @@ def plot_figures(out, combined=None, only=None):
         ax.spines['left'].set_visible(True)
         ax.tick_params(axis='both', direction='in')
         ax.set_xticks(range(0, 61, 10), [f'{x}%' for x in range(0, 61, 10)])
-        if column == 'rho':
-            ax.set_ylim(0.45, 1.0)
-            ax.set_yticks([0.5, 0.6, 0.7, 0.8, 0.9, 1.0])
         handles, texts = ax.get_legend_handles_labels()
         by_label = dict(zip(texts, handles))
         ordered = [label for label in labels.values() if label in by_label]
-        if column == 'rho':
-            # Recover the panel width from the original 9-inch, right-legend layout.
-            old_legend = ax.legend([by_label[label] for label in ordered], ordered,
-                                   loc='center left', bbox_to_anchor=(1.02, 0.5),
-                                   frameon=False, fontsize=8)
-            fig.tight_layout()
-            panel_width_inches = ax.get_position().width * fig.get_figwidth()
-            old_legend.remove()
-            fig.set_size_inches(12, 6)
-            # Matplotlib fills columns first; preserve the requested row order.
-            legend_order = [ordered[i] for i in (0, 4, 1, 5, 2, 6, 3, 7)]
-            ax.legend([by_label[label] for label in legend_order], legend_order,
-                      loc='lower center', bbox_to_anchor=(0.5, 1.01),
-                      ncol=4, frameon=False, fontsize=11,
-                      columnspacing=1.2, handlelength=1.8, borderaxespad=0)
-        else:
-            ax.legend([by_label[label] for label in ordered], ordered,
-                      loc='center left', bbox_to_anchor=(1.02, 0.5),
-                      frameon=False, fontsize=11)
+        ax.legend([by_label[label] for label in ordered], ordered,
+                  loc='center left', bbox_to_anchor=(1.02, 0.5),
+                  frameon=False, fontsize=11)
         fig.tight_layout()
         # Apply one uniform scale to labels, tick labels, and legend text.
         from matplotlib.text import Text
         for text in fig.findobj(match=Text):
             text.set_fontsize(text.get_fontsize() * 2.25)
-        if column == 'rho':
-            position = ax.get_position()
-            width = panel_width_inches / fig.get_figwidth()
-            ax.set_position([(1 - width) / 2, position.y0, width, position.height])
-            # Match the legend width and reduce the reference panel height by 25%.
-            fig.canvas.draw()
-            renderer = fig.canvas.get_renderer()
-            panel = ax.get_window_extent(renderer)
-            legend = ax.get_legend().get_window_extent(renderer)
-            aspect = panel.width / panel.height
-            panel_width = legend.width / fig.dpi
-            panel_height = 0.75 * panel_width / aspect
-            left, right, bottom = 0.8, 0.2, 0.6
-            top = legend.height / fig.dpi + 0.01 * panel_height + 0.2
-            figure_width = left + panel_width + right
-            figure_height = bottom + panel_height + top
-            fig.set_size_inches(figure_width, figure_height)
-            ax.set_position([left / figure_width, bottom / figure_height,
-                             panel_width / figure_width, panel_height / figure_height])
-            fig.canvas.draw()
-            renderer = fig.canvas.get_renderer()
-            panel = ax.get_window_extent(renderer)
-            legend = ax.get_legend().get_window_extent(renderer)
-            assert abs(panel.width - legend.width) < 1
-            assert abs(panel.width / panel.height - aspect / 0.75) < 1e-6
-            print(f'Fig 4 panel: {panel_width:.3f} x {panel_height:.3f} inches; '
-                  f'legend width: {legend.width / fig.dpi:.3f} inches')
         for extension in ('pdf', 'png'):
             fig.savefig(out / f'{stem}.{extension}', dpi=300, bbox_inches='tight')
         plt.close(fig)
