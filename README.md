@@ -1,8 +1,8 @@
-# Ok-k-mer manuscript experiments
-
+# Ok-*k*-mer manuscript experiments
 This repository contains the experiment workflows, legacy analysis code,
-notebooks, and local results for the Ok-k-mer manuscript. 
+notebooks, and local results for the Ok-*k*-mer manuscript. 
 The `okkmer` command-line package and documentation is found at this [repo](https://github.com/StephenHwang/Ok-k-mer).
+The Ok-*k*-mer preprint can be found here: [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.11.06.764926v1)
 
 
 ## Installation
@@ -18,7 +18,6 @@ python -m pip install .
 dashing2 --help
 okkmer help
 ```
-
 
 ## Getting help
 If you run into any issues or have any questions, reach out either through:
